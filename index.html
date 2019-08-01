@@ -172,38 +172,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>概述—-<br>Kotlin是一门最近比较流行的静态类型编程语言，而且和Groovy、Scala一样同属Java系。Kotlin具有的很多静态语言特性诸如：类型判断、多范式、扩展函数、模式匹配等等让我无法只作为一个吃瓜群众了，所以稍微花了点时间了解了一下该语言。</p>
-<p>本文主要介绍一下如何使用Kotlin结合SpringBt开发一个带有数据库交互的REST风格基本程序</p>
-<p>注： 本文原载于 My Personal Blog：， CodeSheep · 程序羊 ！</p>
-<p>实验环境<br>JDK不用说了，Kotlin毕竟是运行在JVM环境下的语言，所以JDK必须，我这里用的JDK1.8<br>数据库：MySQL<br>数据库访问组件：Spring data jpa<br>J2EE框架：SpringBt 1.5.2.RELEASE<br>构建工具：Gradle<br>工程创建<br>没啥好说的，我这里创建的是基于Gradle的Kotlin工程：</p>
-<p>基于Gradle的Kotlin工程</p>
-<p>创建完成后的基本工程样式和SpringBt的工程几乎没任何区别，给张图示意一下好了：</p>
-<p>工程基本样式</p>
-<p>好啦，接下来我们就来写代码完善这个工程即可</p>
-<p>完善build.gradle配置<br>我们需要在build.gradle中引入SpringBt依赖，除此之外还要引入一些特定的插件方便我们向写Java代码一样来写Kotlin程序！</p>
-<p>在dependencies中加入如下依赖：</p>
-<p>dependencies {<br>    compile “org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version”<br>    testCompile group: ‘junit’, name: ‘junit’, version: ‘4.12’<br>    compile(“org.springframework.boot:spring-boot-starter-web”)<br>    testCompile(“org.springframework.boot:spring-boot-starter-test”)<br>    compile(“org.springframework.boot:spring-boot-starter-data-jpa”)<br>    compile(‘mysql:mysql-connector-java:5.1.13’)<br>}<br>这样SpringBt相关的依赖就配置上了！</p>
-<p>接下来我们配置两个非常关键的插件依赖：</p>
-<p>无参（no-arg）插件<br>全开放（allopen）插件<br>我们先配上，等下解释：</p>
-<p>buildscript {<br>    ext.kotlin_version = ‘1.1.1’<br>    ext.springboot_version = ‘1.5.2.RELEASE’</p>
-<pre><code>repositories {
-    mavenCentral()
-}
-dependencies {
-    // Kotlin Gradle插件
-    classpath &quot;org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version&quot;
-    // SpringBoot Gradle插件
-    classpath(&quot;org.springframework.boot:spring-boot-gradle-plugin:$springboot_version&quot;)
-    // Kotlin整合SpringBoot的默认无参构造函数，默认把所有的类设置open类插件
-    classpath(&quot;org.jetbrains.kotlin:kotlin-noarg:$kotlin_version&quot;) // 无参插件
-    classpath(&quot;org.jetbrains.kotlin:kotlin-allopen:$kotlin_version&quot;) // 全开放插件
-}</code></pre><p>}<br>其中（以下解释源自《Kotlin极简教程》）：</p>
-<p>org.jetbrains.kotlin:kotlin-noarg是无参（no-arg）编译器插件，它为具有特定注解的类生成一个额外的零参数构造函数。 这个生成的构造函数是合成的，因此不能从 Java 或 Kotlin 中直接调用，但可以使用反射调用。 这样我们就可以使用 Java Persistence API（JPA）实例化 data 类。</p>
-<p>org.jetbrains.kotlin:kotlin-allopen 是全开放编译器插件。我们使用Kotlin 调用Java的Spring AOP框架和库，需要类为 open（可被继承实现），而Kotlin 类和函数都是默认 final 的，这样我们需要为每个类和函数前面加上open修饰符。这样的代码写起来很费事。还好，我们有all-open 编译器插件。它会适配 Kotlin 以满足这些框架的需求，并使用指定的注解标注类而其成员无需显式使用 open 关键字打开。 例如，当我们使用 Spring 时，就不需要打开所有的类，跟我们在Java中写代码一样，只需要用相应的注解标注即可，如 @Configuration 或 @Service。</p>
-<p>讲白了，引入这两个特定的插件的目的就是为了方便我们向写SpringBt代码一样来写Kotlin程序！</p>
-<p>配置application.properties<br>这里面主要是跟Mysql数据库相关的一些配置：</p>
-<p>spring.datasource.url = jdbc:mysql://localhost:3306/easykotlin<br>spring.datasource.username = root<br>spring.datasource.password = 你的Mysql密码<br>spring.datasource.driver-class-name=com.mysql.jdbc.Driver<br>spring.jpa.database = MYSQL<br>spring.datasource.testWhileIdle = true<br>spring.datasource.validationQuery = SELECT 1<br>spring.jpa.show-sql = true<br>spring.jpa.hibernate.ddl-auto = update<br>spring.jpa.hibernate.naming-strategy = org.hibernate.cfg.ImprovedNamingStrategy<br>spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect</p>
-<p>server.port=7000</p>
+        <p>##:第一章 关于hexo推送到GitHub的个人博客网站的搭建<br>1、准备工作：下载安装好Git,NodeJs。关于这两软件的详细介绍可看廖雪峰老师的文章。<br>地址：<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a><br>2.进入cmd命令开始搭建：<br>（1）、输入node -v 检查nodejs是否安装成功。（2）、利用npm安装一个cnpm淘宝的一个源，这样比较快。将指向淘宝镜像源：命令为：nmp install -g cnpm –registry-<a href="https://registry.nopm.taobao.org" target="_blank" rel="noopener">https://registry.nopm.taobao.org</a><br>(3)用cnmp来安装hexo博客：cnmp install -g hexo-cli成功后可用hexo -v检查<br>(4）找好一个盘符为即将搭建的博客建一个新的文件夹：例如我在D:myblog（我在D盘建了一个myblog的文件夹）输入命令：d：，mkdir myblog。<br>(5)进入myblog目录下：cd myblog，然后用hexo生成自己的博客，输入命令：hexo init(初始化一个博客)<br>(6)启动博客，在myblog目录下输入命令：hexo start（s）,即可在<a href="https://localhost:4000访问。括号里代表输入简写也可以" target="_blank" rel="noopener">https://localhost:4000访问。括号里代表输入简写也可以</a><br>(7)新建一篇文章，按Ctrl+C断掉启动，新建一篇叫我的第一篇博客文章,输入:hexo new (n) “我的第一篇博客文章”。可用vim编辑器编辑文章内容，也可下载一个软件名为Visual studio code 的软件在里面编辑。下载地址为：<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a><br><img src="/images/55.jpg" alt><br>插入文章内容图片等可参考：<a href="https://faceghost.com/article/396091" target="_blank" rel="noopener">https://faceghost.com/article/396091</a><br>(8)在myblog目录下重新生成，先清理一下原先的文件。输入命令：hexo clean,再生成：hexo g,然后启动，hexo s。<br>接下来在输入本地：<a href="http://localhost:4000即可查看。" target="_blank" rel="noopener">http://localhost:4000即可查看。</a><br>3、接下来讲个人博客部署到GitHub的仓库中去，首先你要注册登录GitHub的账号，要有自己的账号。可以直接去网上查查看GitHub的教程，也可借鉴一下<a href="https://www.jianshu.com/p/68b9e463333f这里面的内容。" target="_blank" rel="noopener">https://www.jianshu.com/p/68b9e463333f这里面的内容。</a><br>（1）、在GitHub中新建一个仓库，输入正确的命令一定是你的（GitHub账号名.github.io) <img src="/images/66.png" alt="tip"><br>（2）、创建完成后回到myblog目录下输入命令，安装一个git部署的插件：cnpm install –save hexo-deployer-git<br>（3）、设置关键文件，打开_config.yml，在此文件里面的最后加上：注意：type：,repo：,branch：后要跟空格。<br>type: git<br>repo: 直接是你GitHub的仓库地址例如（<a href="https://github.com/mhaiwyl/mhaiwyl.github.io.git）" target="_blank" rel="noopener">https://github.com/mhaiwyl/mhaiwyl.github.io.git）</a><br>branch: master<br><img src="/images/99.png" alt="tip"><br>保存退出后，在myblog目录下输入命令：hexo d 。即可将本地博客文章推送到GitHub的仓库上。可能在最后一步时会报很多错，网上也有很多hexo的解决办法。对于我部署时报的错，一个是在写type：，repo:，branch：后忘加空格，还有一个就是输入hexo d,出现这种情况<br><img src="/images/77.png" alt="tip"><br>此时输入这两条命令：git config –-global user.email “<a href="mailto:you@example.com" target="_blank" rel="noopener">you@example.com</a>”<br>git config –-global user.name “Your Name” 即可,然后重新输入hexo d<br>此时刷新GitHub你新建仓库的地方。就会出现类似这种<br><img src="/images/88.png" alt="tip"><br>然后在网址中输入：https：//你GitHub的名字.github.io成功显示页面就搭建成功啦。<br>4、更新hexo的主题<br>例如可以搜索：<a href="https://github.com/litten/hexo-theme-yilia(这位写感觉比较好，大家可以参考借鉴)" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia(这位写感觉比较好，大家可以参考借鉴)</a><br>(1)、下载主题：输入命令： git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia<br>(2)、现在去修改_config.yml文件，将里面 改成 theme:yilia即可<br><img src="/images/00.png" alt="tip"><br>(3)重新清理，hexo clean ,重新生成：hexo g,重新启动：hexo s。最后输入：hexo d。就完成了<br>总结：初次搭建可能会遇到一些问题，在环境搭建好后，可以去网上查查hexo的常用命令，初始化博客，部署到GitHub上。本文借鉴了:codeshep.cn程序羊的B站教学视频，大家有兴趣可以加这个前辈的博客或者微信公众号：博客为：<a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a>   微信公众号：CodeSheep · 程序羊</p>
 
       
 
