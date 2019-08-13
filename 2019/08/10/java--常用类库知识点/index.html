@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第一篇博客文章-Mh | Hexo</title>
+  <title>java--常用类库知识点-Mh | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##:第一章 关于hexo推送到GitHub的个人博客网站的搭建 1、准备工作：下载安装好Git,NodeJs。关于这两软件的详细介绍可看廖雪峰老师的文章。 地址：https://www.liaoxuefeng.com/wiki/896043488029600 2.进入cmd命令开始搭建： （1）、输入node -v 检查nodejs是否安装成功。（2）、利用npm安装一个cnpm淘宝的一个源，这">
-<meta name="keywords" content="基于hexo的个人博客搭建">
+  <meta name="description" content="一、StringbBffer类#1 StringBuffer类，StringBuffer类适用于被频繁修改的字符串操作上。一般情况都会用String，极少用StringBuffer 常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承将String变为StringBuffer的两个方法：1、直接利用StringBuffer类的构造方法，p">
+<meta name="keywords" content="java--常用类库知识点">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章-Mh">
-<meta property="og:url" content="http://yoursite.com/2019/07/31/我的第一篇博客文章/index.html">
+<meta property="og:title" content="java--常用类库知识点-Mh">
+<meta property="og:url" content="http://yoursite.com/2019/08/10/java--常用类库知识点/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##:第一章 关于hexo推送到GitHub的个人博客网站的搭建 1、准备工作：下载安装好Git,NodeJs。关于这两软件的详细介绍可看廖雪峰老师的文章。 地址：https://www.liaoxuefeng.com/wiki/896043488029600 2.进入cmd命令开始搭建： （1）、输入node -v 检查nodejs是否安装成功。（2）、利用npm安装一个cnpm淘宝的一个源，这">
+<meta property="og:description" content="一、StringbBffer类#1 StringBuffer类，StringBuffer类适用于被频繁修改的字符串操作上。一般情况都会用String，极少用StringBuffer 常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承将String变为StringBuffer的两个方法：1、直接利用StringBuffer类的构造方法，p">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-02T01:50:31.390Z">
+<meta property="og:updated_time" content="2019-08-12T12:40:24.328Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇博客文章-Mh">
-<meta name="twitter:description" content="##:第一章 关于hexo推送到GitHub的个人博客网站的搭建 1、准备工作：下载安装好Git,NodeJs。关于这两软件的详细介绍可看廖雪峰老师的文章。 地址：https://www.liaoxuefeng.com/wiki/896043488029600 2.进入cmd命令开始搭建： （1）、输入node -v 检查nodejs是否安装成功。（2）、利用npm安装一个cnpm淘宝的一个源，这">
+<meta name="twitter:title" content="java--常用类库知识点-Mh">
+<meta name="twitter:description" content="一、StringbBffer类#1 StringBuffer类，StringBuffer类适用于被频繁修改的字符串操作上。一般情况都会用String，极少用StringBuffer 常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承将String变为StringBuffer的两个方法：1、直接利用StringBuffer类的构造方法，p">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -155,63 +155,75 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-java--常用类库知识点" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章-Mh
+      java--常用类库知识点-Mh
     </h1>
   
 
         
-        <a href="/2019/07/31/我的第一篇博客文章/" class="archive-article-date">
-  	<time datetime="2019-07-31T15:26:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
+        <a href="/2019/08/10/java--常用类库知识点/" class="archive-article-date">
+  	<time datetime="2019-08-10T12:18:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3>##:第一章 关于hexo推送到GitHub的个人博客网站的搭建</h3>
-1、准备工作：下载安装好Git,NodeJs。关于这两软件的详细介绍可看廖雪峰老师的文章。
-地址：https://www.liaoxuefeng.com/wiki/896043488029600
-2.进入cmd命令开始搭建：
-（1）、输入node -v 检查nodejs是否安装成功。（2）、利用npm安装一个cnpm淘宝的一个源，这样比较快。将指向淘宝镜像源：命令为：nmp install -g cnpm --registry-https://registry.nopm.taobao.org
-(3)用cnmp来安装hexo博客：cnmp install -g hexo-cli成功后可用hexo -v检查
-(4）找好一个盘符为即将搭建的博客建一个新的文件夹：例如我在D:myblog（我在D盘建了一个myblog的文件夹）输入命令：d：，mkdir myblog。
-(5)进入myblog目录下：cd myblog，然后用hexo生成自己的博客，输入命令：hexo init(初始化一个博客)
-(6)启动博客，在myblog目录下输入命令：hexo start（s）,即可在https://localhost:4000访问。括号里代表输入简写也可以
-(7)新建一篇文章，按Ctrl+C断掉启动，新建一篇叫我的第一篇博客文章,输入:hexo new (n) "我的第一篇博客文章"。可用vim编辑器编辑文章内容，也可下载一个软件名为Visual studio code 的软件在里面编辑。下载地址为：https://code.visualstudio.com/
-![](/images/55.jpg) 
-插入文章内容图片等可参考：https://faceghost.com/article/396091
-(8)在myblog目录下重新生成，先清理一下原先的文件。输入命令：hexo clean,再生成：hexo g,然后启动，hexo s。
-接下来在输入本地：http://localhost:4000即可查看。
-3、接下来讲个人博客部署到GitHub的仓库中去，首先你要注册登录GitHub的账号，要有自己的账号。可以直接去网上查查看GitHub的教程，也可借鉴一下https://www.jianshu.com/p/68b9e463333f这里面的内容。
-（1）、在GitHub中新建一个仓库，输入正确的命令一定是你的（GitHub账号名.github.io) ![tip](/images/66.png)
-（2）、创建完成后回到myblog目录下输入命令，安装一个git部署的插件：cnpm install --save hexo-deployer-git
-（3）、设置关键文件，打开_config.yml，在此文件里面的最后加上：注意：type：,repo：,branch：后要跟空格。
-type: git
-repo: 直接是你GitHub的仓库地址例如（https://github.com/mhaiwyl/mhaiwyl.github.io.git）
-branch: master
-![tip](/images/99.png)
-保存退出后，在myblog目录下输入命令：hexo d 。即可将本地博客文章推送到GitHub的仓库上。可能在最后一步时会报很多错，网上也有很多hexo的解决办法。对于我部署时报的错，一个是在写type：，repo:，branch：后忘加空格，还有一个就是输入hexo d,出现这种情况
-![tip](/images/77.png)
-此时输入这两条命令：git config –-global user.email “you@example.com” 
-git config –-global user.name “Your Name” 即可,然后重新输入hexo d
-此时刷新GitHub你新建仓库的地方。就会出现类似这种
-![tip](/images/88.png)
-然后在网址中输入：https：//你GitHub的名字.github.io成功显示页面就搭建成功啦。
-4、更新hexo的主题
-例如可以搜索：https://github.com/litten/hexo-theme-yilia(这位写感觉比较好，大家可以参考借鉴)
-(1)、下载主题：输入命令： git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
-(2)、现在去修改_config.yml文件，将里面 改成 theme:yilia即可
-![tip](/images/00.png)
-(3)重新清理，hexo clean ,重新生成：hexo g,重新启动：hexo s。最后输入：hexo d。就完成了
-总结：初次搭建可能会遇到一些问题，在环境搭建好后，可以去网上查查hexo的常用命令，初始化博客，部署到GitHub上。本文借鉴了:codeshep.cn程序羊的B站教学视频，大家有兴趣可以加这个前辈的博客或者微信公众号：博客为：www.codesheep.cn   微信公众号：CodeSheep · 程序羊
+        <h2 id="一、StringbBffer类"><a href="#一、StringbBffer类" class="headerlink" title="一、StringbBffer类"></a>一、StringbBffer类</h2><p>#1 StringBuffer类，StringBuffer类适用于被频繁修改的字符串操作上。一般情况都会用String，极少用StringBuffer</p>
+<h2 id="常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承"><a href="#常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承" class="headerlink" title="常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承"></a>常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承</h2><p>将String变为StringBuffer的两个方法：<br>1、直接利用StringBuffer类的构造方法，public StringBuffer（String str):<br>public static void main(String[] args) {<br>        String str = “Hello”;<br>        StringBuffer sb = new StringBuffer(str);<br>        System.out.println(sb);</p>
+<pre><code>}</code></pre><p>输出：Hello<br>2、利用StringBuffer类的append（）方法：<br>public static void main(String[] args) {<br>        String str = “Hello”;<br>        StringBuffer sb = new StringBuffer();<br>        sb.append(str);<br>        System.out.println(sb);<br>    }<br>输出：Hello</p>
+<h2 id="将StringBuffer变为String，利用StringBuffer的toSting（）方法："><a href="#将StringBuffer变为String，利用StringBuffer的toSting（）方法：" class="headerlink" title="将StringBuffer变为String，利用StringBuffer的toSting（）方法："></a>将StringBuffer变为String，利用StringBuffer的toSting（）方法：</h2><p>public static void main(String[] args) {<br>        StringBuffer sb = new StringBuffer();<br>        sb.append(“Hello Word!”);<br>        String str = sb.toString();<br>        System.out.println(str);<br>    }<br>输出结果：Hello Word!</p>
+<h2 id="StringBuffer的几个常用操作方法"><a href="#StringBuffer的几个常用操作方法" class="headerlink" title="StringBuffer的几个常用操作方法"></a>StringBuffer的几个常用操作方法</h2><p>1、字符串反转，替换，指定位置上插入字符串：<br>public static void main(String[] args) {<br>        StringBuffer sb = new StringBuffer();<br>        sb.append(“Hello Word!”).insert(0,”ai”);//连接并从指定位置插入字符串<br>//        System.out.println(sb.reverse());//反转操作<br>        System.out.println(sb.replace(6,12,”MH”));//字符串替换<br>        sb.insert(2,”qqq”);<br>        System.out.println(sb);<br>    }</p>
+<h1 id="常见面试题分析：解释String和StringBuffer的区别？"><a href="#常见面试题分析：解释String和StringBuffer的区别？" class="headerlink" title="常见面试题分析：解释String和StringBuffer的区别？"></a>常见面试题分析：解释String和StringBuffer的区别？</h1><p>答：String的内容不可改变，而StringBuffer的内容可以改变，如果需要对字符串数据进行频繁修改，只能使用StringBuffer类。</p>
+<h2 id="二、Runtime类：在每一个JVM进程中，都会存在一个运行时的操作类的对象，而对象所属的类型就是Runtime类。Runtime类中的构造方法被私有化，是一个标准的单例模式，存在一个static型的方法，可以取得本例实例化对象：public-static-Runtime-getRuntime（）"><a href="#二、Runtime类：在每一个JVM进程中，都会存在一个运行时的操作类的对象，而对象所属的类型就是Runtime类。Runtime类中的构造方法被私有化，是一个标准的单例模式，存在一个static型的方法，可以取得本例实例化对象：public-static-Runtime-getRuntime（）" class="headerlink" title="二、Runtime类：在每一个JVM进程中，都会存在一个运行时的操作类的对象，而对象所属的类型就是Runtime类。Runtime类中的构造方法被私有化，是一个标准的单例模式，存在一个static型的方法，可以取得本例实例化对象：public static Runtime getRuntime（）"></a>二、Runtime类：在每一个JVM进程中，都会存在一个运行时的操作类的对象，而对象所属的类型就是Runtime类。Runtime类中的构造方法被私有化，是一个标准的单例模式，存在一个static型的方法，可以取得本例实例化对象：public static Runtime getRuntime（）</h2><p>Runtime类方法：<br>1、取得最大可用内存量：public long maxMemory（）<br>2、取得总共可用内存量：public long totalMemory()<br>3、取得空闲内存量：public long freeMemory()<br>4、取得Runtime类的实例化对象：public static Runtime getRuntime()<br>5、运行垃圾收集器、释放垃圾空间：public void gc()<br>方法调用：<br>public static void main(String[] args) {<br>        Runtime run = Runtime.getRuntime();//取得Runtime类对象<br>        System.out.println(“1、最大可用：”+run.maxMemory());<br>        System.out.println(“2、总共可用：”+run.totalMemory());<br>        System.out.println(“1、空闲可用：”+run.freeMemory());<br>        String s = “”;<br>        for(int x= 0 ;x &lt; 1000;x++) {<br>            s += x;//产生垃圾<br>        }<br>        System.out.println(“2、最大可用：”+run.maxMemory());<br>        System.out.println(“2、总共可用：”+run.totalMemory());<br>        System.out.println(“2、空闲可用：”+run.freeMemory());<br>        run.gc();//释放垃圾空间<br>        System.out.println(“3、最大可用：”+run.maxMemory());<br>        System.out.println(“3、总共可用：”+run.totalMemory());<br>        System.out.println(“3、空闲可用：”+run.freeMemory());<br>    }</p>
+<h1 id="常见面试题分析：什么叫gc-java是如何处理的？"><a href="#常见面试题分析：什么叫gc-java是如何处理的？" class="headerlink" title="常见面试题分析：什么叫gc()?java是如何处理的？"></a>常见面试题分析：什么叫gc()?java是如何处理的？</h1><p>GC（Garbage Collector）:垃圾收集器，可以释放掉垃圾空间所占用的内存。在java中GC有两种操作方式：一种是由JVM不定期的执行GC操作，另外一种是由用户自己手动调用Runtime类的gc()方法进行垃圾空间的释放。</p>
+<h2 id="三、System类"><a href="#三、System类" class="headerlink" title="三、System类"></a>三、System类</h2><p>System类的方法：<br>1、数组拷贝操作：public static void arraycopy(Object src,int srcPos,Object dest,int destPos,int length)<br>(数组拷贝还有一个格式)：System.arraycopy(源数组名称，源数组开始点，目标数组名称，目标数组开始点，长度)<br>2、取得当前的日期时间，以long型数据返回：public static long currentTimeMillis()<br>代码：<br>    public static void main(String[] args) {<br>        int a [] = new int[] {1,10,52,41};<br>        for(int x= 0 ;x&lt;a.length;x++) {<br>            System.out.print(a[x]+”、”);<br>        }<br>        int b [] = new int[6];<br>        System.arraycopy(a, 0, b, 0, 4);//数组拷贝<br>        System.out.println();<br>        for(int x= 0 ;x&lt;b.length;x++) {<br>            System.out.print(b[x]+”、”);<br>        }<br>        long start = System.currentTimeMillis();//取得开始时间<br>        String s = “”;<br>        for(int x= 0 ; x &lt; 1000;x++) {//产生垃圾<br>            s += x;<br>        }<br>        long end = System.currentTimeMillis();//取得结束时间<br>        System.out.println(“所花费时间：”+(end-start)+”ms”);<br>    }<br>注：在System类中还存在一个方法：public static void gc(),这个方法间接调用了Runtime类中的gc()方法，，不表示一个重写方法。所以System.gc()和调用Runtime.getRuntime().gc()最终效果是完全一样的。</p>
+<h2 id="如果希望一个对象收尾时执行一些收尾工作，则对象所在的类可以实现一个finalize-方法，此方法由Object类定义：protected-void-finalize-throws-Throwable"><a href="#如果希望一个对象收尾时执行一些收尾工作，则对象所在的类可以实现一个finalize-方法，此方法由Object类定义：protected-void-finalize-throws-Throwable" class="headerlink" title="如果希望一个对象收尾时执行一些收尾工作，则对象所在的类可以实现一个finalize()方法，此方法由Object类定义：protected void finalize() throws Throwable"></a>如果希望一个对象收尾时执行一些收尾工作，则对象所在的类可以实现一个finalize()方法，此方法由Object类定义：protected void finalize() throws Throwable</h2><p>注：finalize方法上抛出Throwable表示出现异常或者错误都不会导致程序中断<br>如：<br>class Person11{<br>    public Person11() {<br>        System.out.println(“Person类的实例化对象产生”);<br>    }<br>    @Override<br>    protected void finalize() throws Throwable {<br>        System.out.println(“Person对象被回收”);//覆写方法<br>        throw new Exception(“不影响程序进行”);<br>    }<br>}<br>public class Stringbuffer {<br>    public static void main(String[] args) {<br>        Person11 p = new Person11();<br>        p = null;//对象成为垃圾<br>        System.gc();//手工清除<br>        System.out.println(“Hello World”);<br>    }<br>}<br>输出结果：<br>Person类的实例化对象产生<br>Hello World<br>Person对象被回收</p>
+<h1 id="本程序在Person类中覆写了Object类的finalize（）方法，主要可以处理对象回收前的操作，并且为了验证此方法不影响程序执行，特别抛出一个手工异常类对象，当Person对象成为垃圾后（p-null）考虑到自动垃圾收集机制的不确定性，所以手工调用gc-方法进行强制回收，调用后会运行垃圾处理机制，在调用finalize（）方法执行收尾"><a href="#本程序在Person类中覆写了Object类的finalize（）方法，主要可以处理对象回收前的操作，并且为了验证此方法不影响程序执行，特别抛出一个手工异常类对象，当Person对象成为垃圾后（p-null）考虑到自动垃圾收集机制的不确定性，所以手工调用gc-方法进行强制回收，调用后会运行垃圾处理机制，在调用finalize（）方法执行收尾" class="headerlink" title="本程序在Person类中覆写了Object类的finalize（）方法，主要可以处理对象回收前的操作，并且为了验证此方法不影响程序执行，特别抛出一个手工异常类对象，当Person对象成为垃圾后（p = null）考虑到自动垃圾收集机制的不确定性，所以手工调用gc()方法进行强制回收，调用后会运行垃圾处理机制，在调用finalize（）方法执行收尾"></a>本程序在Person类中覆写了Object类的finalize（）方法，主要可以处理对象回收前的操作，并且为了验证此方法不影响程序执行，特别抛出一个手工异常类对象，当Person对象成为垃圾后（p = null）考虑到自动垃圾收集机制的不确定性，所以手工调用gc()方法进行强制回收，调用后会运行垃圾处理机制，在调用finalize（）方法执行收尾</h1><h2 id="常见面试题分析：请解释final，finally，finalize的区别"><a href="#常见面试题分析：请解释final，finally，finalize的区别" class="headerlink" title="常见面试题分析：请解释final，finally，finalize的区别"></a>常见面试题分析：请解释final，finally，finalize的区别</h2><p>Final表示终结器，用于定义不能被继承的父类，不能被覆写的方法，常量；<br>Finally是异常处理的出口<br>Finalize（）是Object类定义的一个方法，用于执行对象回收前的收尾操作。</p>
+<h2 id="四、日期操作类"><a href="#四、日期操作类" class="headerlink" title="四、日期操作类"></a>四、日期操作类</h2><h1 id="1-Date类的常用方法"><a href="#1-Date类的常用方法" class="headerlink" title="1 Date类的常用方法"></a>1 Date类的常用方法</h1><p>（1）、实例化Date类对象(构造)：public Date()<br>（2）、将数字变为Date类对象，long 为日期时间数据(构造)：public Date(long date)<br>（3）、将当前的日期时间变为long型（普通）：public long getTime（）<br>public static void main(String[] args) {<br>        Date date = new Date();<br>        System.out.println(date);<br>        long num = date.getTime();//将Date变为long型数据public long getTime（）<br>        System.out.println(num);<br>        Date d = new Date(num);//将long型数据变为Date数据 public Date（long date）<br>        System.out.println(d);</p>
+<pre><code>}</code></pre><p>输出结果：<br>Sun Aug 11 21:31:22 CST 2019<br>1565530282951<br>Sun Aug 11 21:31:22 CST 2019</p>
+<h1 id="2-日期格式化操作类：SimpleDateFormat"><a href="#2-日期格式化操作类：SimpleDateFormat" class="headerlink" title="2 日期格式化操作类：SimpleDateFormat"></a>2 日期格式化操作类：SimpleDateFormat</h1><p>常用方法：<br>（1）、传入日期时间标记实例化对象：public SimpleDateFormat(String pattern)<br>（2）、将日期格式化为字符串数据：public final String format（Date date）<br>（3）、将字符串格式化为日期数据：public Date parse（String source）throws ParseException<br>public static void main(String[] args) throws ParseException {<br>        Date date = new Date();<br>        SimpleDateFormat sdf = new SimpleDateFormat(“yyyy年-MM月-dd日 HH：mm”);<br>        String str = sdf.format(date);//将日期格式化为字符串数据<br>        System.out.println(str);<br>        String str1 = “2019-08-11 21:58”;<br>        SimpleDateFormat sdf1 = new SimpleDateFormat(“yyyy-MM-dd HH:mm”);//<br>        Date d = sdf1.parse(str1);//将字符串格式化为日期数据<br>        System.out.println(d);</p>
+<pre><code>}</code></pre><p>输出结果：<br>2019年-08月-11日 22：13<br>Sun Aug 11 21:58:00 CST 2019</p>
+<h1 id="注：字符串格式和日期时间标记要统一；-在使用SimpleDateFormat类将字符串变为Date数据时，一定要注意给出的字符串格式要和实例化SimpleDateFormat类对象时的格式相统一"><a href="#注：字符串格式和日期时间标记要统一；-在使用SimpleDateFormat类将字符串变为Date数据时，一定要注意给出的字符串格式要和实例化SimpleDateFormat类对象时的格式相统一" class="headerlink" title="注：字符串格式和日期时间标记要统一； 在使用SimpleDateFormat类将字符串变为Date数据时，一定要注意给出的字符串格式要和实例化SimpleDateFormat类对象时的格式相统一"></a>注：字符串格式和日期时间标记要统一； 在使用SimpleDateFormat类将字符串变为Date数据时，一定要注意给出的字符串格式要和实例化SimpleDateFormat类对象时的格式相统一</h1><p><strong><em>字符串可以向基本数据类型（包装类）、日期类型（SimpleDateFormat)进行转换，反过来，他们都可以向字符串进行转换</em></strong></p>
+<h2 id="五、随机数类：Random类"><a href="#五、随机数类：Random类" class="headerlink" title="五、随机数类：Random类"></a>五、随机数类：Random类</h2><p>代码：<br>public static void main(String[] args) throws ParseException {<br>        Random rand = new Random();<br>        for(int x = 0 ;x&lt;10;x++) {<br>            System.out.print(rand.nextInt(101)+”、”);<br>        }</p>
+<pre><code>}</code></pre><p>输出结果：1~100十个随机数</p>
+<h2 id="六、数学公式类：Math"><a href="#六、数学公式类：Math" class="headerlink" title="六、数学公式类：Math"></a>六、数学公式类：Math</h2><p>这个类中所有方法都是static型的方法，而这个类值强调一个方法round（），public static long round(double a)表示四舍五入。<br>代码：<br>public static void main(String[] args) throws ParseException {<br>        System.out.println(Math.round(15.6));//计算结果16<br>        System.out.println(Math.round(15.5));//计算结果16<br>        System.out.println(Math.round(-15.6));//计算结果-16<br>        System.out.println(Math.round(-15.5));//计算结果-15<br>        System.out.println(Math.round(-15.51));//计算结果-16<br>        System.out.println(Math.round(15.235));//计算结果15<br>    }</p>
+<h2 id="七、大数字操作类"><a href="#七、大数字操作类" class="headerlink" title="七、大数字操作类"></a>七、大数字操作类</h2><h1 id="1、大整数操作类：BigInteger"><a href="#1、大整数操作类：BigInteger" class="headerlink" title="1、大整数操作类：BigInteger"></a>1、大整数操作类：BigInteger</h1><p>基本操作方法：<br>（1）、实例化BigInteger对象：public BigInteger(String val)<br>（2）、加法操作：public BigInteger add(BigInteger val)<br>（3）、减法操作：public BigInteger subtract(BigInteger val)<br>（4）、乘法操作：public BigInteger multiply(BigInteger val)<br>（5）、除法操作（不保留余数）：public BigInteger divide(BigInteger val)<br>（6）、除法操作（保留余数）：public BigInteger[] divideAndRemainder(BigInteger val)<br>代码：<br>    public static void main(String[] args) throws ParseException {<br>        BigInteger b1 = new BigInteger(“201945454545454545454”);<br>        BigInteger b2 = new BigInteger(“20194545454545”);<br>        System.out.println(“加法结果：”+b1.add(b2));<br>        System.out.println(“减法结果：”+b1.subtract(b2));<br>        System.out.println(“乘法结果：”+b1.multiply(b2));<br>        System.out.println(“除法结果：”+b1.divide(b2));<br>        BigInteger result[] = b1.divideAndRemainder(b2);<br>        System.out.println(“除法结果保留余数：”+”商：”+result[0]+”余数：”+result[1]);<br>    }<br>输出结果：<br>加法结果：201945474739999999999<br>减法结果：201945434350909090909<br>乘法结果：4078196661156932999988984793388430<br>除法结果：10000000<br>除法结果保留余数：商：10000000余数：4545454</p>
+<h1 id="2、大小数操作类：BigDecimal"><a href="#2、大小数操作类：BigDecimal" class="headerlink" title="2、大小数操作类：BigDecimal"></a>2、大小数操作类：BigDecimal</h1><p>使用BigDecimal完成四舍五入操作<br>（1）、向上进位（常量）：public static final int ROUND_HALE_UP<br>（2）、传递一个double型数据（构造）：public BigDecimal(double val)<br>（3）、除法操作，设置好保留小数位数及进位模式（普通）：public BigDecimal divisor,int scale,int roundingMode)<br>代码：<br>class MyMath{<br>    public static double round(double num,int scale) {<br>        BigDecimal b = new BigDecimal(num);//将数据封装在BigDecimal类中<br>        BigDecimal result = b.divide(new BigDecimal(1),<br>                scale,BigDecimal.ROUND_HALF_UP);//除法计算,scale表示保留几位小数，BigDecimal(1)表示除数为1<br>        return result.doubleValue();//Number类的方法，返回值为double<br>    }<br>}<br>public class Stringbuffer {<br>    public static void main(String[] args) throws ParseException {<br>        System.out.println(MyMath.round(15.2656, 1));<br>        System.out.println(MyMath.round(-15.5656, 2));<br>        System.out.println(MyMath.round(15.2656, 2));<br>    }<br>}<br>输出结果：<br>15.3<br>-15.57<br>15.27</p>
+<h2 id="八、数组操作类：Arrays"><a href="#八、数组操作类：Arrays" class="headerlink" title="八、数组操作类：Arrays"></a>八、数组操作类：Arrays</h2><p>Arrays是一个定义在java.util包中专门进行数组的操作类，在这个雷中定义了所有的与数组有关的基本操作：二分查找、相等判断、数组填充等。常用方法如下：<br>（1）、判断两个数组是否相等，此方法被重载多次，可以判断各种数据类型的数组(普通)：public static boolean equals(int[] a1,int[] a2)<br>（2）、将指定内容填充到数组中。此方法被重载多次，可以填充各种数据类型的数组(普通)：public static void fill（int[] a,int val)<br>（3）、数组排序，此方法被重载多次，可以对各种类型的数组进行排序(普通)：public static void sort(int[] a)<br>（4）、对排序后的数组进行检索，此方法被重载多次，可以对各种类型的数组进行搜索<br>（5）、输出数组信息。此方法被重载多次，可以输出各种数据类型的数组（普通）：public static String toSting（int[] a)<br>测试 ：<br>public static void main(String[] args) throws ParseException {<br>        int [] dataA = new int [] {11,22,33};//数组A<br>        int [] dataB = new int [] {44,66,11,22,33};//数组B<br>        System.out.println(Arrays.equals(dataA,dataB));//数组比较<br>        Arrays.fill(dataA,3);//数组填充<br>        System.out.println(Arrays.toString(dataA));//数组输出<br>        Arrays.sort(dataB);//数组排序<br>        System.out.println(Arrays.toString(dataB));//输出数组信息<br>        System.out.println(Arrays.binarySearch(dataB,33));//对排序后的数组进行检索<br>    }<br>输出结果：<br>false<br>[3, 3, 3]<br>[11, 22, 33, 44, 66]<br>2</p>
+<h1 id="注Arrays类中还为对象数组排序定义了一个方法：public-static-void-sort-Object-a"><a href="#注Arrays类中还为对象数组排序定义了一个方法：public-static-void-sort-Object-a" class="headerlink" title="注Arrays类中还为对象数组排序定义了一个方法：public static void sort(Object[] a)"></a>注Arrays类中还为对象数组排序定义了一个方法：public static void sort(Object[] a)</h1><p>class Person11{<br>    private String name;<br>    private int age;<br>    public Person11(String name,int age) {<br>        this.name = name ;<br>        this.age = age;<br>    }<br>    @Override<br>    public String toString() {<br>        // TODO Auto-generated method stub<br>        return “Person [name =”+this.name+”,age=”+this.age+”]”;<br>    }<br>}<br>public class Stringbuffer {<br>    public static void main(String[] args) throws ParseException {<br>        Person11 per[] = new Person11[] {new Person11(“谢萌”,20),new Person11(“西瓜”,18)};<br>        Arrays.sort(per);//排序对象数组<br>        System.out.println(Arrays.toString(per));//输出对象数组<br>    }<br>}</p>
+<h2 id="注：此时尽管语法不报错，但在执行时会出现“ClassCastException”（类转换异常），错误原因为Person11无法转换为Comparable实例，所以普通的对象数组是不能够进行比较的，如果要比较需要比较器的支持"><a href="#注：此时尽管语法不报错，但在执行时会出现“ClassCastException”（类转换异常），错误原因为Person11无法转换为Comparable实例，所以普通的对象数组是不能够进行比较的，如果要比较需要比较器的支持" class="headerlink" title="注：此时尽管语法不报错，但在执行时会出现“ClassCastException”（类转换异常），错误原因为Person11无法转换为Comparable实例，所以普通的对象数组是不能够进行比较的，如果要比较需要比较器的支持"></a>注：此时尽管语法不报错，但在执行时会出现“ClassCastException”（类转换异常），错误原因为Person11无法转换为Comparable实例，所以普通的对象数组是不能够进行比较的，如果要比较需要比较器的支持</h2><h2 id="九、比较器"><a href="#九、比较器" class="headerlink" title="九、比较器"></a>九、比较器</h2><h1 id="1、常用比较器：Comparable，定义如下："><a href="#1、常用比较器：Comparable，定义如下：" class="headerlink" title="1、常用比较器：Comparable，定义如下："></a>1、常用比较器：Comparable，定义如下：</h1><p>public interface Comparable<t>{<br>    public int compareTo(T o);<br>}<br>该接口中只提供一个comparableTo()方法，根据文档要求：要排序的数组所在的类一定要实现此接口，此接口返回的是int型数据，而用户覆写此方法时只需要返回3种结果：1（&gt;0）,0(=0),-1(&lt;0);如果（&gt;0）-1就表示结果按升序排序，为1是降序降序<br>代码：<br>class Person11 implements Comparable<person11>{<br>    private String name;<br>    private int age;<br>    public Person11(String name,int age) {<br>        this.name = name ;<br>        this.age = age;<br>    }<br>    @Override<br>    public String toString() {<br>        // TODO Auto-generated method stub<br>        return “ 姓名 =”+this.name+” age=”+this.age+”\n”;<br>    }<br>    @Override<br>    public int compareTo(Person11 o) {<br>        if(this.age&gt;o.age){<br>            return 1;<br>        }else if(this.age&lt;o.age){<br>            return -1;<br>        } else{<br>            retuen 0;<br>        }</person11></t></p>
+<pre><code>//    if(this.age&gt;0) {
+//        return -1;
+//    }else if(this.age&lt;0){
+//        return 1;
+//    }else {
+//        return 0;
+//    }
 
+}</code></pre><p>}<br>public class Stringbuffer {<br>    public static void main(String[] args) throws ParseException {<br>        Person11 per[] = new Person11[] {new Person11(“谢萌”,20),new Person11(“西瓜”,18),new Person11(“西瓜”,16)};<br>        Arrays.sort(per);//排序对象数组<br>        System.out.println(Arrays.toString(per));//输出对象数组<br>    }<br>}<br>输出结果：<br>[ 姓名 =西瓜 age=16<br>,  姓名 =西瓜 age=18<br>,  姓名 =谢萌 age=20<br>]</p>
+<h1 id="所以，后续只要牵扯到对象数组排序时首先就要想到Comparable"><a href="#所以，后续只要牵扯到对象数组排序时首先就要想到Comparable" class="headerlink" title="所以，后续只要牵扯到对象数组排序时首先就要想到Comparable"></a>所以，后续只要牵扯到对象数组排序时首先就要想到Comparable</h1><h1 id="2、挽救的比较器Comparator"><a href="#2、挽救的比较器Comparator" class="headerlink" title="2、挽救的比较器Comparator"></a>2、挽救的比较器Comparator</h1><p>Comparable比较器是一个类定义时就已经具备的功能，那如果现在有如下的一个已经定义好的类则该如何排序？<br>定义：public interface Comparator<t>{<br>    public int compare(T o1,T o2);<br>    public boolean equals(Object obj);<br>}<br>在compare（）方法上存在两个参数用于比较大小，而要想使用这个接口，需要单独定义一个比较规则类。如：<br>class Person11 {//已经定义好了的一个类<br>    private String name;<br>    private int age;<br>    public Person11(String name,int age) {<br>        this.name = name ;<br>        this.age = age;<br>    }<br>    @Override<br>    public String toString() {<br>        // TODO Auto-generated method stub<br>        return “ 姓名 =”+this.name+” age=”+this.age+”\n”;<br>    }<br>    public void setName(String name) {<br>        this.name = name;<br>    }<br>    public void setAge(int age) {<br>        this.age = age;<br>    }<br>    public String getName() {<br>        return name;<br>    }<br>    public int getAge() {<br>        return age;<br>    }<br>}<br>class PersonComparator implements Comparator<person11>{//定义比较规则类</person11></t></p>
+<pre><code>@Override
+public int compare(Person11 o1, Person11 o2) {
+    if(o1.getAge()&gt;o2.getAge()) {
+        return 1;
+    }
+    if(o1.getAge()&lt;o2.getAge()) {
+        return -1;
+    }
+    return 0;
+}</code></pre><p>}<br>public static void main(String[] args) throws ParseException {//类中调试<br>        Person11 per[] = new Person11[] {new Person11(“谢萌”,20),new Person11(“西瓜”,18),new Person11(“西瓜”,16)};<br>        Arrays.sort(per,new PersonComparator());//排序对象数组<br>        System.out.println(Arrays.toString(per));//输出对象数组<br>    }<br>输出结果：<br>[ 姓名 =西瓜 age=16<br>,  姓名 =西瓜 age=18<br>,  姓名 =谢萌 age=20<br>]</p>
+<h2 id="十、对象克隆"><a href="#十、对象克隆" class="headerlink" title="十、对象克隆"></a>十、对象克隆</h2><p>克隆就是对象的复制操作，在Object类中存在一个clone（）方法。<br>克隆方法：protected Object clone() throws CloneNoteeSupportedExceprion;<br>此方法上抛出了一个不支持的克隆异常，这个异常表示的是要克隆对象的类必须实现Cloneable接口，但是要实现Cloneable接口没有任何方法，所以这个接口属于标志接口，只表示一种能力<br>实现对象克隆操作：<br>class Person11 implements Cloneable{//表示一种能力，没有方法覆写<br>    private String name;<br>    private int age;<br>    public Person11(String name,int age) {<br>        this.name = name ;<br>        this.age = age;<br>    }<br>    @Override<br>    public String toString() {<br>        // TODO Auto-generated method stub<br>        return “ 姓名 =”+this.name+” age=”+this.age+”\n”;<br>    }<br>    public void setName(String name) {<br>        this.name = name;<br>    }<br>    public void setAge(int age) {<br>        this.age = age;<br>    }<br>    public String getName() {<br>        return name;<br>    }<br>    public int getAge() {<br>        return age;<br>    }<br>    @Override<br>        protected Object clone() throws CloneNotSupportedException {//调用父类克隆<br>            // TODO Auto-generated method stub<br>            return super.clone();<br>        }<br>}<br>public class Stringbuffer {<br>    public static void main(String[] args) throws CloneNotSupportedException {<br>        Person11 p = new Person11(“张三”,18);<br>        Person11 p1 =  (Person11) p.clone();<br>        pe1.setName(“麻子”);<br>        System.out.println(p+””+p1);<br>    }<br>}<br>输出结果：<br> 姓名 =张三 age=18<br> 姓名 =麻子 age=18</p>
+<h2 id="十一、正则表达式"><a href="#十一、正则表达式" class="headerlink" title="十一、正则表达式"></a>十一、正则表达式</h2><h1 id="1、常用正则匹配符号"><a href="#1、常用正则匹配符号" class="headerlink" title="1、常用正则匹配符号"></a>1、常用正则匹配符号</h1><p> 1、字符：匹配单个字符<br>（1）、表示匹配字母a: a<br>（2）、匹配转义字符“\”: \<br>（3）、匹配转义字符“\t”:  \t<br>（4）、匹配转移而字符“\n”: \n</p>
+<p>2、一组字符：任意匹配里面的一个单个字符<br>（1）、表示的可能是字母a,可能是b，或者是c： [abc]<br>（2）、表示不是字母a、字母b、字母c中的任意一个： [^abc]<br>（3）、表示全部字母中的任意一个： [a-zA-Z]<br>（4）、表示全部数字中的任意一个： [0-9]<br>3、边界匹配：在以后编写JavaScript使用正则时要使用到<br>（1）、表示一组正则的开始： ^<br>（2）、表示一组正则的结束： $<br>4、简写表达式：每一位出现的简写标记也只表示一位<br>（1）、表示任意一位字符： .<br>（2）、表示任意一位的数字，等价于[0-9]: \d<br>（3）、表示任意的一位非数字，等价于[^0-9]: \D<br>（4）、表示任意的一位字母，数字，<em>,等价于[a-zA-Z0-9_]: \w<br>（5）、表示任意的一位非字母，数字，</em>,等价于[^a-zA-Z0-9_]: \W<br>（6）、表示任意的一位空格，如\n,\t等： \s<br>（7）、表示任意的一位非空格： \S<br>5、数量表示：之前的所有正则都只是表示一位，如果想要表示多位，则就需要数量表示<br>（1）、此正则出现0此或一次： 正则表达式？<br>（2）、此正则出现0次、1次或多次： 正则表达式*<br>（3）、次正则出现1次或多次： 正则表达式+<br>（4）、次正则出现n次： 正则表达式{n}<br>（5）、次正则出现n次以上： 正则表达式{n，}<br>（6）、次正则出现n~m次： 正则表达式{n,m}<br>6、逻辑表示：与、或、非<br>（1）、表达式A后紧跟着表达式B： 正则表达式A正则表达式B<br>（2）、表达式A或者表达式B，二者任选一个： 正则表达式A|正则表达式B<br>（3）、将多个子表达式合成一个表达式，作为一组出现：（正则表达式）</p>
+<h1 id="2、String类对正则的支持"><a href="#2、String类对正则的支持" class="headerlink" title="2、String类对正则的支持"></a>2、String类对正则的支持</h1><p>操作方法：<br>（1）、与指定正则匹配(普通)：public boolean matches(String regex)<br>（2）、替换满足指定正则的全部内容：public String replaceAll(String regex,String replacement)<br>（3）、替换满足指定正则的首个内容: public String replaceFirst(String regex,String replacement)<br>（4）、按照指定正则全拆分： public String[] split(String regex)<br>（5）、按照指定正则拆分为指定个数： public String[] split(String regex,int limit)<br>代码：<br>public static void main(String[] args) {<br>        String s = “12abcd31253tasd”;<br>        String s1 = “aabbaaab”;<br>        if(s1.matches(“\d+”)) {<br>            System.out.println(“是数字”);<br>        }else {<br>            System.out.println(“不是数字”);<br>        }<br>        String r = “[ab]+”;<br>        System.out.println(s1.matches(r));<br>        System.out.println(s.replaceAll(“[a-z]”, “0”));//替换满足指定正则的全部内容<br>        System.out.println(s.replaceFirst(“\d”, “q”));//替换满足指定正则的首个内容<br>        System.out.println(s.replaceAll(“[a-z]+”, “0”));//替换满足指定正则的首个内容<br>        String  regex = “\d”;//数字出现一次[0-9]<br>        String result[] = s.split(regex);//按照指定正则全拆分<br>        for(int x = 0 ; x&lt;result.length;x++) {<br>            System.out.print(result[x]+”、”);<br>        }<br>    }<br>输出结果：<br>不是数字<br>true<br>120000312530000<br>q2abcd31253tasd<br>120312530<br>、、abcd、、、、、tasd、</p>
+<p>例1：验证一个字符串是否是整型数据，如果是将其变为int型数据，而后执行乘法操作<br>public static void main(String[] args) {<br>        String str =”100”;<br>        String regex = “\d+”;<br>        if(str.matches(regex)) {<br>            int s = Integer.parseInt(str);<br>            System.out.println(“积为：”+s<em>s);<br>        }else {<br>            System.out.println(“字符串不是纯数字组成!”);<br>        }<br>    }<br>输出结果：10000<br>例2：验证字符串是否为小数，如果是将其变为double型数据，而后执行乘法操作<br>public static void main(String[] args) {<br>        String str =”100.22”;<br>        String regex = “\d+(\.\d+)?”;//小数点（.）之后必须存在数字才有意义，所以使用了括号运算符，将“.”和小数位一起进行验证((\.\d+)?)整体出现0次或者一次<br>        if(str.matches(regex)) {<br>            double s = Double.parseDouble(str);<br>            System.out.println(“积为：”+s*s);<br>        }else {<br>            System.out.println(“字符串不是纯数字组成!”);<br>        }<br>    }<br>输出结果：积为：10044.0484<br>例3：输入一个字符串，按照“年-月-日 时：分：秒”的形式，如果正确，则将其变为Date型数据<br>public static void main(String[] args) throws ParseException {<br>        String str =”2019-08-12 15:33:50”;<br>        String regex = “\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}”;<br>        if(str.matches(regex)) {<br>            SimpleDateFormat sdf = new SimpleDateFormat(“yyyy-MM-dd HH:mm:ss”);<br>            System.out.println(sdf.parse(str));//将字符串转换为日期格式<br>        }<br>    }<br>输出结果：Mon Aug 12 15:33:50 CST 2019<br>例4：一个用户名只能由字母、数字、<em>组成，其长度只能是6~15位<br>public static void main(String[] args) throws ParseException {<br>        String str =”201905_asdf”;<br>        String regex = “\w{6,15}”;<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>输出结果：字符串合法<br>例5：编写一个正则表达式，验证电话号码是否正确（以下有关于几种电话号码的写法）<br>（1）、50021689 ——&gt; \d{7,8}表示电话号码为7位或者8位<br>（2）、01250021689 ——&gt; (\d{3,4})?\d{7,8} 前面三位可能出现也可能不出现<br>（3）、012-50021689 ——&gt; (\d{3,4})?-?\d{7,8} “-“可能出现也可能不出现<br>（4）、(012)-50021689 ——&gt; ((\d{3,4}|\(\d{3,4}\))-?)?\d{7,8}<br>（5）、(012)50021689 ——&gt;((\d{3,4}|\(\d{3,4}\))-?)?\d{7,8}<br>public static void main(String[] args) throws ParseException {<br>        String str =”012-52221698”;<br>        String regex = “((\d{3,4}|\(\d{3,4}\))-?)?\d{7,8}”;//此表达式包含以上5种<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>例6：要求验证一个Email地址，Email地址的用户名由字母、数字和_和.组成，其中不能以数字和.开头，并且Eemail地址的域名只能是.com,.cn,.net<br>public static void main(String[] args) throws ParseException {<br>        String str =”</em>.@.15.com”;<br>        String regex = “[a-zA-Z_][a-zA-Z_0-9\.]</em>@[a-zA-Z_0-9\.]+\.(com|cn|net)”;<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>输出结果：字符串合法<br>例7：要求其组成原则为“姓名：年龄：成绩：|姓名：年龄：成绩：|…”,姓名只能是字母组成，年龄只能是数字，成绩可能有小数<br>public static void main(String[] args) throws ParseException {<br>        String str =”mh:21:99|wyl:22:99.5|ly:20:89”;<br>        String regex = “([a-zA-Z]+:\d{1,3}:\d{1,3}(\.\d{1,2})?\|)+”<br>                + “([a-zA-Z]+:\d{1,3}:\d{1,3}(\.\d{1,2})?)?”;<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>输出结果：字符串合法<br>将上面按成绩由高到低排序？既然是排序就想到的方是Arrays.sort()，但是现在可以将这些数据变为对象数组排序，利用比较器完成<br>代码：<br>class Student11 implements Comparable<student11>{<br>    private String name;<br>    private int age;<br>    private double score;<br>    public Student11(String name,int age,double score) {<br>        this.name = name;<br>        this.age = age;<br>        this.score = score;<br>    }<br>    @Override<br>    public String toString() {<br>        // TODO Auto-generated method stub<br>        return “姓名：”+this.name+”,年龄：”+this.age+”,成绩：”+this.score+”\n”;<br>    }<br>    @Override<br>    public int compareTo(Student11 o) {<br>        // TODO Auto-generated method stub<br>        if(this.score&gt;o.score) {<br>            return -1;<br>        }<br>        if(this.score&lt;o.score) {<br>            return 1;<br>        }<br>        return 0;<br>    }<br>}<br>public static void main(String[] args) throws ParseException {<br>        String str =”mh:21:99|wyl:22:99.5|ly:20:89”;<br>        String regex = “([a-zA-Z]+:\d{1,3}:\d{1,3}(\.\d{1,2})?\|)+”<br>                + “([a-zA-Z]+:\d{1,3}:\d{1,3}(\.\d{1,2})?)?”;<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>            String result[] = str.split(“\|”);//按照正则拆分<br>            System.out.println(Arrays.toString(result));<br>            Student11 stu[] = new Student11[result.length];<br>            for(int x = 0;x&lt;result.length;x++) {<br>                String temp[] = result[x].split(“:”);<br>                stu[x] = new Student11(temp[0],<br>                Integer.parseInt(temp[1]), Double.parseDouble(temp[2]));<br>            }<br>            Arrays.sort(stu);<br>            System.out.println(Arrays.toString(stu));<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>输出结果：<br>字符串合法<br>[mh:21:99, wyl:22:99.5, ly:20:89]<br>[姓名：wyl,年龄：22,成绩：99.5<br>, 姓名：mh,年龄：21,成绩：99.0<br>, 姓名：ly,年龄：20,成绩：89.0</student11></p>
 
       
 
@@ -246,7 +258,7 @@ git config –-global user.name “Your Name” 即可,然后重新输入hexo d
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">基于hexo的个人博客搭建</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">java--常用类库知识点</a>
         		</li>
       		
 		</ul>
@@ -302,7 +314,7 @@ git config –-global user.name “Your Name” 即可,然后重新输入hexo d
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/31/我的第一篇博客文章/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/10/java--常用类库知识点/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -316,18 +328,18 @@ git config –-global user.name “Your Name” 即可,然后重新输入hexo d
   
 <nav id="article-nav">
   
-    <a href="/2019/08/02/学习java基础过程的知识点/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/08/12/java--IO操作/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          (no title)
+          java--常用类库知识点-Mh
         
       </div>
     </a>
   
   
-    <a href="/2019/07/31/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/08/09/java--多线程知识点/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇博客文章-Mh</div>
       <i class="icon-circle-right"></i>
     </a>
   

@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>我的第一篇博客文章-Mh | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##:第一章 关于hexo推送到GitHub的个人博客网站的搭建 1、准备工作：下载安装好Git,NodeJs。关于这两软件的详细介绍可看廖雪峰老师的文章。 地址：https://www.liaoxuefeng.com/wiki/896043488029600 2.进入cmd命令开始搭建： （1）、输入node -v 检查nodejs是否安装成功。（2）、利用npm安装一个cnpm淘宝的一个源，这">
-<meta name="keywords" content="基于hexo的个人博客搭建">
+  <meta name="description" content="一、多线程的实现：java中，要想实现多线程的程序，就必须依靠一个线程的主体类，但是这个主题类在定义时也需要一些特殊要求，这个类可以继承Thread类或实现Runnable接口来定义完成#1、继承Thread类实现多线程注意：run()方法为Thread类中覆写的方法，此方法是线程的主体方法，但是在调用方法时并不是直接调用，而是用java中提供的start()方法间接调用，因为直接调用不能体现出多">
+<meta name="keywords" content="多线程知识点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇博客文章-Mh">
-<meta property="og:url" content="http://yoursite.com/2019/07/31/我的第一篇博客文章/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/09/java--多线程知识点/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##:第一章 关于hexo推送到GitHub的个人博客网站的搭建 1、准备工作：下载安装好Git,NodeJs。关于这两软件的详细介绍可看廖雪峰老师的文章。 地址：https://www.liaoxuefeng.com/wiki/896043488029600 2.进入cmd命令开始搭建： （1）、输入node -v 检查nodejs是否安装成功。（2）、利用npm安装一个cnpm淘宝的一个源，这">
+<meta property="og:description" content="一、多线程的实现：java中，要想实现多线程的程序，就必须依靠一个线程的主体类，但是这个主题类在定义时也需要一些特殊要求，这个类可以继承Thread类或实现Runnable接口来定义完成#1、继承Thread类实现多线程注意：run()方法为Thread类中覆写的方法，此方法是线程的主体方法，但是在调用方法时并不是直接调用，而是用java中提供的start()方法间接调用，因为直接调用不能体现出多">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-02T01:50:31.390Z">
+<meta property="og:updated_time" content="2019-08-09T17:25:58.783Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的第一篇博客文章-Mh">
-<meta name="twitter:description" content="##:第一章 关于hexo推送到GitHub的个人博客网站的搭建 1、准备工作：下载安装好Git,NodeJs。关于这两软件的详细介绍可看廖雪峰老师的文章。 地址：https://www.liaoxuefeng.com/wiki/896043488029600 2.进入cmd命令开始搭建： （1）、输入node -v 检查nodejs是否安装成功。（2）、利用npm安装一个cnpm淘宝的一个源，这">
+<meta name="twitter:description" content="一、多线程的实现：java中，要想实现多线程的程序，就必须依靠一个线程的主体类，但是这个主题类在定义时也需要一些特殊要求，这个类可以继承Thread类或实现Runnable接口来定义完成#1、继承Thread类实现多线程注意：run()方法为Thread类中覆写的方法，此方法是线程的主体方法，但是在调用方法时并不是直接调用，而是用java中提供的start()方法间接调用，因为直接调用不能体现出多">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -155,7 +155,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-java--多线程知识点" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -167,51 +167,109 @@
   
 
         
-        <a href="/2019/07/31/我的第一篇博客文章/" class="archive-article-date">
-  	<time datetime="2019-07-31T15:26:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
+        <a href="/2019/08/09/java--多线程知识点/" class="archive-article-date">
+  	<time datetime="2019-08-09T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3>##:第一章 关于hexo推送到GitHub的个人博客网站的搭建</h3>
-1、准备工作：下载安装好Git,NodeJs。关于这两软件的详细介绍可看廖雪峰老师的文章。
-地址：https://www.liaoxuefeng.com/wiki/896043488029600
-2.进入cmd命令开始搭建：
-（1）、输入node -v 检查nodejs是否安装成功。（2）、利用npm安装一个cnpm淘宝的一个源，这样比较快。将指向淘宝镜像源：命令为：nmp install -g cnpm --registry-https://registry.nopm.taobao.org
-(3)用cnmp来安装hexo博客：cnmp install -g hexo-cli成功后可用hexo -v检查
-(4）找好一个盘符为即将搭建的博客建一个新的文件夹：例如我在D:myblog（我在D盘建了一个myblog的文件夹）输入命令：d：，mkdir myblog。
-(5)进入myblog目录下：cd myblog，然后用hexo生成自己的博客，输入命令：hexo init(初始化一个博客)
-(6)启动博客，在myblog目录下输入命令：hexo start（s）,即可在https://localhost:4000访问。括号里代表输入简写也可以
-(7)新建一篇文章，按Ctrl+C断掉启动，新建一篇叫我的第一篇博客文章,输入:hexo new (n) "我的第一篇博客文章"。可用vim编辑器编辑文章内容，也可下载一个软件名为Visual studio code 的软件在里面编辑。下载地址为：https://code.visualstudio.com/
-![](/images/55.jpg) 
-插入文章内容图片等可参考：https://faceghost.com/article/396091
-(8)在myblog目录下重新生成，先清理一下原先的文件。输入命令：hexo clean,再生成：hexo g,然后启动，hexo s。
-接下来在输入本地：http://localhost:4000即可查看。
-3、接下来讲个人博客部署到GitHub的仓库中去，首先你要注册登录GitHub的账号，要有自己的账号。可以直接去网上查查看GitHub的教程，也可借鉴一下https://www.jianshu.com/p/68b9e463333f这里面的内容。
-（1）、在GitHub中新建一个仓库，输入正确的命令一定是你的（GitHub账号名.github.io) ![tip](/images/66.png)
-（2）、创建完成后回到myblog目录下输入命令，安装一个git部署的插件：cnpm install --save hexo-deployer-git
-（3）、设置关键文件，打开_config.yml，在此文件里面的最后加上：注意：type：,repo：,branch：后要跟空格。
-type: git
-repo: 直接是你GitHub的仓库地址例如（https://github.com/mhaiwyl/mhaiwyl.github.io.git）
-branch: master
-![tip](/images/99.png)
-保存退出后，在myblog目录下输入命令：hexo d 。即可将本地博客文章推送到GitHub的仓库上。可能在最后一步时会报很多错，网上也有很多hexo的解决办法。对于我部署时报的错，一个是在写type：，repo:，branch：后忘加空格，还有一个就是输入hexo d,出现这种情况
-![tip](/images/77.png)
-此时输入这两条命令：git config –-global user.email “you@example.com” 
-git config –-global user.name “Your Name” 即可,然后重新输入hexo d
-此时刷新GitHub你新建仓库的地方。就会出现类似这种
-![tip](/images/88.png)
-然后在网址中输入：https：//你GitHub的名字.github.io成功显示页面就搭建成功啦。
-4、更新hexo的主题
-例如可以搜索：https://github.com/litten/hexo-theme-yilia(这位写感觉比较好，大家可以参考借鉴)
-(1)、下载主题：输入命令： git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
-(2)、现在去修改_config.yml文件，将里面 改成 theme:yilia即可
-![tip](/images/00.png)
-(3)重新清理，hexo clean ,重新生成：hexo g,重新启动：hexo s。最后输入：hexo d。就完成了
-总结：初次搭建可能会遇到一些问题，在环境搭建好后，可以去网上查查hexo的常用命令，初始化博客，部署到GitHub上。本文借鉴了:codeshep.cn程序羊的B站教学视频，大家有兴趣可以加这个前辈的博客或者微信公众号：博客为：www.codesheep.cn   微信公众号：CodeSheep · 程序羊
+        <h2 id="一、多线程的实现：java中，要想实现多线程的程序，就必须依靠一个线程的主体类，但是这个主题类在定义时也需要一些特殊要求，这个类可以继承Thread类或实现Runnable接口来定义完成"><a href="#一、多线程的实现：java中，要想实现多线程的程序，就必须依靠一个线程的主体类，但是这个主题类在定义时也需要一些特殊要求，这个类可以继承Thread类或实现Runnable接口来定义完成" class="headerlink" title="一、多线程的实现：java中，要想实现多线程的程序，就必须依靠一个线程的主体类，但是这个主题类在定义时也需要一些特殊要求，这个类可以继承Thread类或实现Runnable接口来定义完成"></a>一、多线程的实现：java中，要想实现多线程的程序，就必须依靠一个线程的主体类，但是这个主题类在定义时也需要一些特殊要求，这个类可以继承Thread类或实现Runnable接口来定义完成</h2><p>#1、继承Thread类实现多线程<br>注意：run()方法为Thread类中覆写的方法，此方法是线程的主体方法，但是在调用方法时并不是直接调用，而是用java中提供的start()方法间接调用，因为直接调用不能体现出多个线程之间以交互的方式来运行。<br>例子：<br>class MyThread extends Thread{//线程的主体类<br>    private String title;<br>    public MyThread(String title) {<br>        this.title = title;<br>    }<br>    @Override<br>        public void run() {<br>            // TODO Auto-generated method stub<br>            for(int x = 0;x &lt; 10;x++) {<br>                System.out.println(this.title+”运行 ：x=”+x );<br>            }<br>        }<br>}<br>public class MultiThreading {<br>    public static void main(String[] args) {</p>
+<pre><code>    MyThread mt = new MyThread(&quot;线程A&quot;);
+    MyThread mt1 = new MyThread(&quot;线程B&quot;);
+    MyThread mt2 = new MyThread(&quot;线程C&quot;);
+    mt.start();
+    mt1.start();
+    mt2.start();
+}</code></pre><p>}<br>输出结果：<br>线程A运行 ：x=0<br>线程C运行 ：x=0<br>线程B运行 ：x=0<br>线程C运行 ：x=1<br>线程A运行 ：x=1<br>线程C运行 ：x=2<br>线程C运行 ：x=3<br>…………..</p>
+<p>#2、利用Runnable接口实现多线程（利用Thread很方便，但它只能实现单继承，所以利用Runnabl接口，他可以有效的避免但继承的局限）<br>注意：对于实现了Runnable接口后，要想启动多线程，之前Thread类的start()方法不能直接继承使用了，此时则需要利用Thread类启动多线程<br>例如：<br>public static void main(String[] args) {</p>
+<pre><code>    MyThread mt = new MyThread(&quot;线程A&quot;);
+    MyThread mt1 = new MyThread(&quot;线程B&quot;);
+    MyThread mt2 = new MyThread(&quot;线程C&quot;);
+    new Thread(mt).start();
+    new Thread(mt1).start();
+    new Thread(mt2).start();
 
+}</code></pre><p>#3多线程两种方式的区别：<br>（1）、多线程的两种实现方式都是需要一个线程的主类，而这个类可以实现Runnable接口或继承Thread类。不管使用何种方式都必须在子类中覆写run()方法。此方法为线程的主方法；<br>（2）、Thread类是Runnable接口的子类，使用Runnable接口可以避免单继承局限，以更加方便地实现数据共享的概念。</p>
+<p>#4线程的操作状态主要有5种：创建状态，就绪状态，运行状态、堵塞状态，终止状态</p>
+<p>#5线程的主要操作方法<br>1、线程的命名和取得<br>（1）、实例化线程对象，接受Runnable接口子类对象，同时设置线程名称。（类型构造）：public Thread(Runnable target,String name)<br>（2）、设置线程名称（类型：普通）：public final void setName(String name)<br>（3）、取得线程名称（类型：普通）：public final String getName()<br>（4）、取得当前线程对象的方法：public static Thread currentThread()。<br>例如：<br>package object;</p>
+<p>class MyThread implements Runnable{//线程的主体类<br>    private int ticket = 5;//一共5张票<br>    public MyThread() {<br>        // TODO Auto-generated constructor stub<br>    }<br>    @Override<br>        public void run() {<br>            // TODO Auto-generated method stub<br>            for(int x = 0;x &lt; 10;x++) {<br>                if(ticket&gt;0)<br>                    //获取当前线程名称以及票数<br>                System.out.println(Thread.currentThread().getName()+”运行 ：ticket=”+this.ticket– );<br>            }<br>        }<br>}<br>public class MultiThreading {<br>    public static void main(String[] args) {</p>
+<pre><code>    MyThread mt = new MyThread();
+    new Thread(mt,&quot;线程A&quot;).start();//设置当前线程名称
+    new Thread(mt,&quot;线程B&quot;).start();
+    new Thread(mt,&quot;线程C&quot;).start();
+}</code></pre><p>}<br>输出结果：<br>线程A运行 ：ticket=5<br>线程C运行 ：ticket=3<br>线程B运行 ：ticket=4<br>线程C运行 ：ticket=1<br>线程A运行 ：ticket=2</p>
+<p>#注：线程是依赖于进程，在进程的基础上划分。在java中每一个JVM运行就是进程，每一个JVM进程都至少启动两个线程：main个gc</p>
+<p>#线程的休眠：Thread.sleep(1000)每次休眠1000毫秒</p>
+<p>#6 线程的优先级<br>方法和常量：<br>（1）、最高优先级，数值为10（常量） public static final int MAX_PRIORITY<br>（2）、中等优先级，数值为5 （常量） public static final int NORM_PRIORITY<br>（3）、最低优先级，数值为1 （常量） public static fnial int MIN_PRIORITY<br>（4）、设置线程优先级      （普通） public final void setPriority(int newPriority)<br>（5）、取得线程优先级      （普通） public final int getPriority()<br>例如：<br>class MyThread implements Runnable{//线程的主体类<br>    private int ticket = 5;//一共5张票<br>    public MyThread() {<br>        // TODO Auto-generated constructor stub<br>    }<br>    @Override<br>        public void run() {<br>            // TODO Auto-generated method stub<br>            for(int x = 0;x &lt; 10;x++) {<br>                try {<br>                    Thread.sleep(1000);<br>                } catch (InterruptedException e) {<br>                    // TODO Auto-generated catch block<br>                    e.printStackTrace();<br>                }<br>                if(ticket&gt;0)<br>                    //获取当前线程名称以及票数还有优先级<br>                System.out.println(Thread.currentThread().getName()<br>                        +”线程优先级：”+Thread.currentThread().getPriority()+”运行 ：ticket=”+this.ticket– );<br>            }<br>        }<br>}<br>public class MultiThreading {<br>    public static void main(String[] args) {</p>
+<pre><code>MyThread mt = new MyThread();
+Thread t1 = new Thread(mt,&quot;线程A&quot;);//定义线程对象
+Thread t2 = new Thread(mt,&quot;线程B&quot;);//定义线程对象
+Thread t3 = new Thread(mt,&quot;线程C&quot;);//定义线程对象
+t2.setPriority(Thread.MAX_PRIORITY);//设置为最高优先级
+t3.setPriority(Thread.MIN_PRIORITY);//设置最低优先级
+t3.setPriority(Thread.MIN_PRIORITY);//设置最低优先级
+t1.start();
+t2.start();
+t3.start();</code></pre><p>//        new Thread(mt,”线程A”).start();//启动线程<br>//        new Thread(mt,”线程B”).start();<br>//        new Thread(mt,”线程C”).start();</p>
+<pre><code>}</code></pre><p>}<br>输出结果：<br>线程A线程优先级：5运行 ：ticket=5<br>线程B线程优先级：10运行 ：ticket=4<br>线程C线程优先级：1运行 ：ticket=3<br>线程B线程优先级：10运行 ：ticket=2<br>线程A线程优先级：5运行 ：ticket=1</p>
+<p>#7 线程的同步与死锁</p>
+<p>#7.1 同步问题<br>例如：<br>class MyThread implements Runnable{//线程的主体类<br>    private int ticket = 5;//一共5张票<br>    public MyThread() {<br>        // TODO Auto-generated constructor stub<br>    }<br>    @Override<br>        public void run() {<br>            // TODO Auto-generated method stub<br>            for(int x = 0;x &lt; 10;x++) {</p>
+<pre><code>        if(ticket&gt;0) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+
+            //获取当前线程名称以及票数
+        System.out.println(Thread.currentThread().getName()
+                +&quot;线程优先级：&quot;+Thread.currentThread().getPriority()+&quot;运行 ：ticket=&quot;+this.ticket-- );
+        }
+
+    }
+}</code></pre><p>}<br>public class MultiThreading {<br>    public static void main(String[] args) {</p>
+<pre><code>MyThread mt = new MyThread();</code></pre><p>//        Thread t1 = new Thread(mt,”线程A”);//定义线程对象<br>//        Thread t2 = new Thread(mt,”线程B”);//定义线程对象<br>//        Thread t3 = new Thread(mt,”线程C”);//定义线程对象<br>//        t2.setPriority(Thread.MAX_PRIORITY);//设置为最高优先级<br>//        t3.setPriority(Thread.MIN_PRIORITY);//设置最低优先级<br>//        t3.setPriority(Thread.MIN_PRIORITY);//设置最低优先级<br>//        t1.start();<br>//        t2.start();<br>//        t3.start();</p>
+<pre><code>    new Thread(mt,&quot;线程A&quot;).start();//启动线程
+    new Thread(mt,&quot;线程B&quot;).start();
+    new Thread(mt,&quot;线程C&quot;).start();
+    new Thread(mt,&quot;线程D&quot;).start();    
+}</code></pre><p>}<br>此时输出结果：<br>线程D线程优先级：5运行 ：ticket=3<br>线程A线程优先级：5运行 ：ticket=4<br>线程A线程优先级：5运行 ：ticket=1<br>线程C线程优先级：5运行 ：ticket=-1<br>线程B线程优先级：5运行 ：ticket=0<br>线程D线程优先级：5运行 ：ticket=-2<br>以上代码结果：包含有负数，因为以上代码run()方法中，（1）判断票数是否大于0，大于0表示有票卖，（2）大于0，且将票卖出去。但是在（1）和（2）步中加入了延迟操作，那么就有可能在一个线程还没有对票数进行减操作前，其他线程就已经减少了，所以出现为负数的情况，要解决 此问题就需要用到同步，使用synchronized关键字。##注意在进行同步操作时必须要设置一个同步的对象，而这个对象应该理解为当前对象this<br>例如：为简化代码量，只需将上面里面的代码里将run()方法里面加上synchronized关键字，此方法为同步代码块（方式一）<br>public void run() {<br>            // TODO Auto-generated method stub<br>            for(int x = 0;x &lt; 10;x++) {<br>                synchronized(this) {<br>                    if(ticket&gt;0) {//判断是否有票<br>                            try {<br>                                Thread.sleep(1000);<br>                            } catch (InterruptedException e) {<br>                                // TODO Auto-generated catch block<br>                                e.printStackTrace();<br>                            }<br>                            //获取当前线程名称以及票数还有优先级<br>                        System.out.println(Thread.currentThread().getName()<br>                            +”线程优先级：”+Thread.currentThread().getPriority()+”运行 ：ticket=”+this.ticket– );</p>
+<pre><code>            }
+        }                    
+    }
+}</code></pre><p>}<br>（2）、同步方法：<br>class MyThread implements Runnable{//线程的主体类<br>    private int ticket = 5;//一共5张票<br>    public MyThread() {<br>        // TODO Auto-generated constructor stub<br>    }<br>    @Override<br>        public void run() {<br>            for(int x = 0 ;x &lt; 10 ; x++) {<br>                this.sal();<br>            }<br>        }<br>    public synchronized void sal() {//定义同步方法<br>        if(this.ticket&gt;0) {<br>            try {<br>                Thread.sleep(1000);<br>            } catch (InterruptedException e) {<br>                // TODO Auto-generated catch block<br>                e.printStackTrace();<br>            }<br>            System.out.println(Thread.currentThread().getName()<br>                    +” 优先级：”+Thread.currentThread().getPriority()+” 运行：”+this.ticket–);<br>        }<br>    }<br>}<br>public class MultiThreading {<br>    public static void main(String[] args) {<br>        MyThread mt = new MyThread();<br>        new Thread(mt,”线程A”).start();//启动线程<br>        new Thread(mt,”线程B”).start();<br>        new Thread(mt,”线程C”).start();<br>        new Thread(mt,”线程D”).start();<br>    }<br>}</p>
+<p>#注，补充说明：加入同步后明显比不加入同步慢，所以同步的代码性能很低，安全性高。</p>
+<p>#同步与异步有何区别？分别在什么情况下使用？：如果一块数据要在多个线程间进行共享，例如正在写的数据，以后可能被另一个线程读到，或者正在读的数据可能已经被另一个线程写过了，那么这些数据就是共享数据，必须进行同步存取；当应用程序在对象上调用了一个需要花费很长时间来执行的方法，并且不希望让程序等待方法的返回时，就应该使用异步编程，很多情况下采用异步途径往往更有效率</p>
+<p>#注：abstract的method是否可同时是static、native或synchronized？  ：都不能和“abstract”同时声明方法</p>
+<p>#8  死锁：同步是指一个线程要等待另外一个线程执行完毕才会继续执行的一种操作形式，但问题也来了，例如：张某想要王某的1000元钱，王某想要张某的物品，但此时张某在等待王某先给钱，王某在等待张某先给物品。此时就陷入了死锁的状态，两人都得不到想要的；即所谓的死锁就是指两个线程都在等待彼此先完成，造成了程序的停滞状态<br>例如：<br>class Zhang{//定义张某的类<br>    public void say() {//张某说<br>        System.out.println(“王某你给我1000元钱，这个手机就是你的了”);<br>    }<br>    public void get() {<br>        System.out.println(“张某得到了钱”);<br>    }<br>}<br>class Wang{//定义张某的类<br>    public void say() {//张某说<br>        System.out.println(“张某你给我手机，这个1000元就是你的了”);<br>    }<br>    public void get() {<br>        System.out.println(“王某得到了手机”);<br>    }<br>}</p>
+<p>class MyThread implements Runnable{<br>    private static Zhang  z = new Zhang();//实例化static型对象，数据共享<br>    private static Wang  w = new Wang();//实例化static型对象，数据共享<br>    boolean flag = false;//声明标记，用于判断哪个对象先执行<br>    @Override<br>    public void run() {//线程的主体类<br>        if(flag) {<br>            synchronized(z) {<br>                z.say();<br>                try {<br>                    Thread.sleep(1000);<br>                } catch (InterruptedException e) {<br>                    // TODO Auto-generated catch block<br>                    e.printStackTrace();<br>                }<br>                synchronized(w) {<br>                    z.get();//要等王某同意才会得到一千元<br>                }<br>            }<br>        }else {<br>            synchronized(w) {<br>                try {<br>                    Thread.sleep(1000);<br>                } catch (InterruptedException e) {<br>                    // TODO Auto-generated catch block<br>                    e.printStackTrace();<br>                }<br>                w.say();<br>                try {<br>                    Thread.sleep(1000);<br>                } catch (InterruptedException e) {<br>                    // TODO Auto-generated catch block<br>                    e.printStackTrace();<br>                }<br>                synchronized(z) {<br>                    w.get();//要等张某同意才会得到手机<br>                }<br>            }<br>        }<br>    }<br>}<br>public class MultiThreading {<br>    public static void main(String[] args) {</p>
+<pre><code>    MyThread mt = new MyThread();//实例化线程对象
+    MyThread mt1 = new MyThread();
+    mt.flag = true;//设置标记
+    mt1.flag = false;
+    Thread t = new Thread(mt);//实例化Thread类对象
+    Thread t1 = new Thread(mt1);
+    t.start();//启动线程
+    t1.start();
+
+}</code></pre><p>}<br>输出结果：<br>王某你给我1000元钱，这个手机就是你的了<br>张某你给我手机，这个1000元就是你的了<br>此时结果会陷入卡顿，因为这两个人都在等对方回复，要想解开。只能对其中一个get()方法的synchronized的同步取消即可</p>
+<p>##线程间的经典操作案例<br>class Message{<br>    private String title;//保存信息的标题<br>    private String content;//保存信息的内容<br>    public void setTitle(String title) {<br>        this.title = title ;<br>    }<br>    public void setContent(String content) {<br>        this.content = content;<br>    }<br>    public String getTitle() {<br>        return title;<br>    }<br>    public String getContent() {<br>        return content;<br>    }<br>}</p>
+<p>class Producer implements Runnable{//定义生产者<br>    private Message msg= null;<br>    public Producer(Message msg) {<br>        this.msg = msg;<br>    }<br>    @Override<br>    public void run() {<br>        for(int x = 0 ; x &lt; 10 ;x++) {<br>            if(x%2 == 0) {<br>                this.msg.setTitle(“缪和”);<br>                try {<br>                    Thread.sleep(1000);<br>                } catch (InterruptedException e) {<br>                    // TODO Auto-generated catch block<br>                    e.printStackTrace();<br>                }<br>                this.msg.setContent(“皮皮月来打游戏了”);<br>            }else {<br>//                try {<br>//                    Thread.sleep(1000);<br>//                } catch (InterruptedException e) {<br>//                    // TODO Auto-generated catch block<br>//                    e.printStackTrace();<br>//                }<br>                this.msg.setTitle(“皮皮月”);<br>                try {<br>                    Thread.sleep(1000);<br>                } catch (InterruptedException e) {<br>                    // TODO Auto-generated catch block<br>                    e.printStackTrace();<br>                }<br>                this.msg.setContent(“缪和来打游戏了啦”);<br>            }<br>        }<br>    }<br>}<br>class Consumer implements Runnable {//定义取出者<br>    private Message msg1 = null;<br>    public Consumer(Message msg1) {<br>        this.msg1 = msg1;<br>    }<br>    @Override<br>    public void run() {<br>        for(int x = 0 ;x &lt; 10;x++) {<br>            try {<br>                Thread.sleep(1000);<br>            } catch (InterruptedException e) {<br>                // TODO Auto-generated catch block<br>                e.printStackTrace();<br>            }<br>            System.out.println(this.msg1.getTitle()+”&gt;&gt;&gt;”+this.msg1.getContent());<br>        }<br>    }<br>}<br>public class MultiThreading {<br>    public static void main(String[] args) {<br>        Message m = new Message();//定义msg对象，用于保存和取出数据<br>        new Thread(new Producer(m)).start();<br>        new Thread(new Consumer(m)).start();<br>    }<br>}</p>
+<p>#以上代码执行会出现设置的数据错位以及数据会重复取出和重复设置，为了解决此问题，需要用到Object类中定义的3个方法完场线程的操作。改正代码如下：<br>（1）、线程的等待（普通）：public final void wait() throws InterruptedException<br>（2）、唤醒第一个等待线程(普通)：public final void notify()<br>（3）、唤醒全部等待线程（普通）：public final void notifyAll()</p>
+<p>#只需修改Message类即可：<br>class Message{<br>    private String title;//保存信息的标题<br>    private String content;//保存信息的内容<br>    private boolean flag = true;//flag 为true表示可以生产，但是不能取走，flag为false表示可以取出，但是不能生产<br>    public synchronized void set(String title,String content) {<br>        if(this.flag == false) {//已经生产过了，不能生产<br>            try {<br>                super.wait();//等待<br>            } catch (InterruptedException e) {<br>                // TODO Auto-generated catch block<br>                e.printStackTrace();<br>            }<br>        }<br>        this.title = title;<br>        try {<br>            Thread.sleep(1000);<br>        } catch (InterruptedException e) {<br>            // TODO Auto-generated catch block<br>            e.printStackTrace();<br>        }<br>        this.content = content ;<br>        this.flag = false; //已经生产完成，修改标志位<br>        super.notify();<br>    }<br>    public synchronized void get() {<br>        if(this.flag == true){//未生产，不能取走<br>            try {<br>                super.wait();//等待<br>            } catch (InterruptedException e) {<br>                // TODO Auto-generated catch block<br>                e.printStackTrace();<br>            }<br>        }</p>
+<pre><code>    try {
+        Thread.sleep(1000);
+    } catch (InterruptedException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
+    System.out.println(this.title+&quot;&gt;&gt;&gt;&quot;+this.content);
+    this.flag = true;//已经取出，可以生产
+    super.notify();//唤醒等待
+}</code></pre><p>}</p>
 
       
 
@@ -246,7 +304,7 @@ git config –-global user.name “Your Name” 即可,然后重新输入hexo d
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">基于hexo的个人博客搭建</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">多线程知识点</a>
         		</li>
       		
 		</ul>
@@ -302,7 +360,7 @@ git config –-global user.name “Your Name” 即可,然后重新输入hexo d
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/31/我的第一篇博客文章/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/09/java--多线程知识点/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -316,18 +374,18 @@ git config –-global user.name “Your Name” 即可,然后重新输入hexo d
   
 <nav id="article-nav">
   
-    <a href="/2019/08/02/学习java基础过程的知识点/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/08/10/java--常用类库知识点/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          (no title)
+          java--常用类库知识点-Mh
         
       </div>
     </a>
   
   
-    <a href="/2019/07/31/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/08/08/JAVA类集笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
   
