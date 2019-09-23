@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 多线程知识点 | mhaiwyl</title>
+  <title>java--数据库编程操作-Mh | mhaiwyl</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="不甘现状，努力奋斗！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mhaiwyl">
-<meta property="og:url" content="http://yoursite.com/tags/多线程知识点/index.html">
+  <meta name="description" content="一、连接数据库1、常见几种数据库连接信息：(1) MySQL数据库    String Dirver=”com.mysql.jdbc.Driver”;//驱动程序    String URL=”jdbc:mysql://localhost:3306/db_name”;  //连接的URL,db_name为数据库名    String UserName=”username”;  //用户名    S">
+<meta name="keywords" content="java--数据库编程操作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java--数据库编程操作-Mh">
+<meta property="og:url" content="http://yoursite.com/2019/08/15/java--数据库编程操作/index.html">
 <meta property="og:site_name" content="mhaiwyl">
-<meta property="og:description" content="不甘现状，努力奋斗！">
+<meta property="og:description" content="一、连接数据库1、常见几种数据库连接信息：(1) MySQL数据库    String Dirver=”com.mysql.jdbc.Driver”;//驱动程序    String URL=”jdbc:mysql://localhost:3306/db_name”;  //连接的URL,db_name为数据库名    String UserName=”username”;  //用户名    S">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-20T05:24:33.814Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mhaiwyl">
-<meta name="twitter:description" content="不甘现状，努力奋斗！">
+<meta name="twitter:title" content="java--数据库编程操作-Mh">
+<meta name="twitter:description" content="一、连接数据库1、常见几种数据库连接信息：(1) MySQL数据库    String Dirver=”com.mysql.jdbc.Driver”;//驱动程序    String URL=”jdbc:mysql://localhost:3306/db_name”;  //连接的URL,db_name为数据库名    String UserName=”username”;  //用户名    S">
   
     <link rel="alternative" href="/atom.xml" title="mhaiwyl" type="application/atom+xml">
   
@@ -157,60 +159,302 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-java--数据库编程操作" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/09/java--多线程知识点/" class="archive-article-date">
-  	<time datetime="2019-08-09T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/09/java--多线程知识点/">我的第一篇博客文章-Mh</a>
+    <h1 class="article-title" itemprop="name">
+      java--数据库编程操作-Mh
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/08/15/java--数据库编程操作/" class="archive-article-date">
+  	<time datetime="2019-08-15T08:50:10.719Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、连接数据库"><a href="#一、连接数据库" class="headerlink" title="一、连接数据库"></a>一、连接数据库</h2><h1 id="1、常见几种数据库连接信息："><a href="#1、常见几种数据库连接信息：" class="headerlink" title="1、常见几种数据库连接信息："></a>1、常见几种数据库连接信息：</h1><p>(1) MySQL数据库<br>    String Dirver=”com.mysql.jdbc.Driver”;//驱动程序<br>    String URL=”jdbc:mysql://localhost:3306/db_name”;  //连接的URL,db_name为数据库名<br>    String UserName=”username”;  //用户名<br>    String Password=”password”;  //密码<br>    Class.forName(“com.mysql.jdbc.Driver”);     //加载MYSQL JDBC驱动程序<br>    Connection con=DriverManager.getConnection(URL,Username,Password);<br>(2)Microsoft SQL server 数据库<br>    String Driver=”com.microsoft.jdbc.sqlserver.SQLServerDriver”;  //驱动程序<br>    String URL=”jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=db_name”;<br>    //连接的URL,db_name为数据库<br>    String UserName=”username”;  //用户名<br>    String Password=”password”;  //密码<br>    Class.forName(“oracle.jdbc.driver.OracleDriver”);     //加载Oracal JDBC驱动程序<br>    Connection con=DriverManager.getConnection(URL,Username,Password);<br>(4) Oracle(用thin模式)数据库<br>    String Driver=”oracle.jdbc.driver.OracleDriver”;  //驱动程序<br>    String URL=”jdbc:oracle:thin://localhost:1521:orcl”;<br>    //连接的URL,orcl为数据库的SID<br>    String UserName=”username”;  //用户名<br>    String Password=”password”;  //密码<br>    Class.forName(“com.microsoft.sqlserver.jdbc.SQLServerDriver”);     //加载SeqServer JDBC驱动程序<br>    Connection con=DriverManager.getConnection(URL,Username,Password);</p>
+<h1 id="2、连接操作步骤"><a href="#2、连接操作步骤" class="headerlink" title="2、连接操作步骤"></a>2、连接操作步骤</h1><p>（1）、加载数据库驱动程序，通过Class类完成：Class.forName(驱动程序);<br>（2）、通过DriverManager类根据指定的属性内容连接数据库：java.sql.DriverManager是一个负责取得数据库连接接口（Connection）对象的操作类，此类中定义了一个取得连接的方法：public static Connection getConnection(String url,String user,String password)throws SQLExcption<br>（3）、关闭数据库连接：在Connection接口中定义了close()方法：public void close() throws SQLException<br>例如：一个连接测试：（在连接之前需要将MySQL的jar包配置进去）<br>public class SqlOperate {<br>    public static final String DRIVER= “com.mysql.jdbc.Driver”;//数据库的驱动路径<br>    public static final String URL = “jdbc:mysql://localhost:3306/mh”;//连接本地数据库的地址<br>    public static final String USER = “root”;//数据库的账号<br>    public static final String PASSWORD = “123”;//数据库的密码</p>
+<pre><code>public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    Connection conn = null;//每一个Connection对象表示一个数据库连接
+    try {
+            Class.forName(DRIVER);
+            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            System.out.println(&quot;连接成功&quot;);
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    try {
+            conn.close();//关闭连接
+        } catch (SQLException e) {
+        // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+}</code></pre><p>}<br>输出结果：连接成功</p>
+<h2 id="二、使用Statement操作数据库"><a href="#二、使用Statement操作数据库" class="headerlink" title="二、使用Statement操作数据库"></a>二、使用Statement操作数据库</h2><p>数据库连接后就要进行操作，这是可以用Statement接口完成，此接口可以使用Connection中提供的createStatement()方法实例化。此接口定义如下常用方法：<br>（1）、执行数据库更新的SQL语句，例如INSERT,UPDATE,DELETE等语句，返回更新的记录数（普通）：public int executeUpdate(String sql) throwsSQLException<br>（2）、执行数据库查询操作，返回一个结果集对象（普通）：public ResultSet executeQuery(String sql) throws SQLException<br>（3）、关闭操作（普通）：public void close() throws SQLException</p>
+<p>&lt;!–&gt; 用Statement接口来完成数据库的增删改操作–&gt;<br>1、执行数据库的增加操作：<br>public class SqlOperate {<br>    public static final String DRIVER= “com.mysql.jdbc.Driver”;//数据库的驱动路径<br>    public static final String URL = “jdbc:mysql://localhost:3306/mh”;//连接本地数据库的地址<br>    public static final String USER = “root”;//数据库的账号<br>    public static final String PASSWORD = “123”;//数据库的密码</p>
+<pre><code>public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    Connection conn = null;//每一个Connection对象表示一个数据库连接
+    try {
+            Class.forName(DRIVER);
+            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            System.out.println(&quot;连接成功&quot;);
+            Statement st = (Statement) conn.createStatement();//找到Statement接口对象
+            String sql = &quot;INSERT INTO game(id,gname,name,password) VALUES(21,&apos;天外飞仙&apos;,&apos;小僵尸&apos;,&apos;123456&apos;)&quot;;
+            int len = st.executeUpdate(sql);//执行Sql语句，并将执行成功的次数返回int用来统计更新行数
+            System.out.println(&quot;更新行数：&quot;+len);
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    try {
+            conn.close();
+        } catch (SQLException e) {
+        // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+}</code></pre><p>}<br>2、执行数据库的更改操作：（由于代码很多与上面代码一样，所以下面代码只给改动部分）<br>String sql = “update game set gname=’大战沙坑’where gname=’天外飞仙’ “;<br>3、执行数据库的删除操作：（由于代码很多与上面代码一样，所以下面代码只给改动部分）<br>String sql = “delete from game where id = 22”;<br>4、<strong><em>因为查询是要查询出来给用户看，所以在查询操作中，就必须有一种结构，可以装下整个的查询结果，而这个结果就使用ResultSet表示，ResultSet接收的类似一张表，但它接收的不是一张表，取出时只需按照数据类型一行一行的取出数据即可。</em></strong><br>ResultSet接口方法：<br>（1）、移动指针并判断是否有数据（普通）：public boolean next() throws SQLException<br>（2）、取得指定类型的数据（普通）：public 数据 getXxx(列的标记) throws SQLException<br>（3）、关闭结果集（普通）：public void close() throws SQLException<br>例如：结合上面的代码：<br>public class SqlOperate {<br>    public static final String DRIVER= “com.mysql.jdbc.Driver”;//数据库的驱动路径<br>    public static final String URL = “jdbc:mysql://localhost:3306/mh”;//连接本地数据库的地址<br>    public static final String USER = “root”;//数据库的账号<br>    public static final String PASSWORD = “123”;//数据库的密码</p>
+<pre><code>public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    Connection conn = null;//每一个Connection对象表示一个数据库连接
+    Statement st = null; //数据库操作对象
+    ResultSet rs = null ;//将查询返回ResultSet结果集
+    try {
+            Class.forName(DRIVER);
+            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            System.out.println(&quot;连接成功&quot;);
+             st = (Statement) conn.createStatement();//找到Statement接口对象</code></pre><p>//                String sql = “INSERT INTO game(id,gname,name,password) VALUES(22,’天外飞仙’,’小僵尸’,’123456’)”;<br>//                String sql = “update game set gname=’大战沙坑’where gname=’天外飞仙’ “;//更新数据<br>//                String sql = “delete from game where id = 22”;<br>                String sql = “select id,gname,name,password from game”;<br>                rs = st.executeQuery(sql);//查询<br>                while(rs.next()) {//判断是否有数据<br>                    //方式一，根据指定类型获取数据<br>//                    int id = rs.getInt(“id”);<br>//                    String gname = rs.getString(“gname”);<br>//                    String name =rs.getString(“name”);<br>//                    String password = rs.getString(“password”);<br>                    //方式二，根据指定类型获取数据。此方式较简单<br>                    int id = rs.getInt(1);<br>                    String gname = rs.getString(2);<br>                    String name =rs.getString(3);<br>                    String password = rs.getString(4);<br>                    System.out.println(id+”\t”+gname+”\t”+name+”\t”+password);//在控制台打印出查询的数据<br>                }<br>//                int len = st.executeUpdate(sql);//将执行成功的次数返回int用来统计更新行数<br>//                System.out.println(“更新行数：”+len);<br>            } catch (Exception e) {<br>                // TODO: handle exception<br>                e.printStackTrace();<br>            }</p>
+<pre><code>    try {
+            rs.close();
+            st.close();
+            conn.close();
+        } catch (SQLException e) {
+        // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+}</code></pre><p>}</p>
+<h1 id="注：ResultSet中的所有数据都可以通过getString-方法取得，因为String可以接收表中任意类型列的内容；查询时最好不要用“-”查询所有内容，本身这样没问题，但是从查询语句上就很难知道所要的具体列是什么。"><a href="#注：ResultSet中的所有数据都可以通过getString-方法取得，因为String可以接收表中任意类型列的内容；查询时最好不要用“-”查询所有内容，本身这样没问题，但是从查询语句上就很难知道所要的具体列是什么。" class="headerlink" title="注：ResultSet中的所有数据都可以通过getString()方法取得，因为String可以接收表中任意类型列的内容；查询时最好不要用“*”查询所有内容，本身这样没问题，但是从查询语句上就很难知道所要的具体列是什么。"></a>注：ResultSet中的所有数据都可以通过getString()方法取得，因为String可以接收表中任意类型列的内容；查询时最好不要用“*”查询所有内容，本身这样没问题，但是从查询语句上就很难知道所要的具体列是什么。</h1><h2 id="三、PreparedStatement-属于Statement的子接口，属于预处理操作，与直接使用Statement不同的是，PreparedStatement在操作时会先在数据表中准备好一条Sql语句，但此时的Sql语句的具体内容暂时不设置，而是之后在进行设置。以插入数据为例，数据表中的指针首先指向最后一条数据后，但是里面的内容不知道，等待用户分配。"><a href="#三、PreparedStatement-属于Statement的子接口，属于预处理操作，与直接使用Statement不同的是，PreparedStatement在操作时会先在数据表中准备好一条Sql语句，但此时的Sql语句的具体内容暂时不设置，而是之后在进行设置。以插入数据为例，数据表中的指针首先指向最后一条数据后，但是里面的内容不知道，等待用户分配。" class="headerlink" title="三、PreparedStatement:属于Statement的子接口，属于预处理操作，与直接使用Statement不同的是，PreparedStatement在操作时会先在数据表中准备好一条Sql语句，但此时的Sql语句的具体内容暂时不设置，而是之后在进行设置。以插入数据为例，数据表中的指针首先指向最后一条数据后，但是里面的内容不知道，等待用户分配。"></a>三、PreparedStatement:属于Statement的子接口，属于预处理操作，与直接使用Statement不同的是，PreparedStatement在操作时会先在数据表中准备好一条Sql语句，但此时的Sql语句的具体内容暂时不设置，而是之后在进行设置。以插入数据为例，数据表中的指针首先指向最后一条数据后，但是里面的内容不知道，等待用户分配。</h2><p>1、预处理操作实际上与在实际生活中占座位是一样，A帮B占座，此时尽管B没有来，但不管B是否来不来，A都会把这个座位占着等待B的到来。<br>    由于PreparedStatement对象已经预编译过，所以其执行速度要高于Statement，因此，对于需要多次执行的Sql语句经常使用PreparedStatement对象操作，以提高效率。<br>    在PreparedStatement中，对于具体的内容是采用“？”的占位符形式出现的，设置是要按照“？”的顺序设置具体的内容<br>2、PreparedStatement的基本操作方法：<br>（1）、执行设置的预处理SQL语句（普通）：public int executeUpdate() throws SQLException<br>（2）、执行数据库查询操作，返回ResultSet(普通)：public ResultSet executeQuery() throws SQLException<br>（3）、指定要设置的索引编号，并设置数据（普通)：public void set 数据类型（int parameterIndex,数据类型 x) throws SQLException<br>（4）、指定要设置的索引编号，并设置java.sql.Date类型的日期内容（普通）：public void setDate(int parameterIndex,Date x) throws SQLException</p>
+<h1 id="注：PreparedStatement依然为接口，所以想要取得此接口的实例化对象，应该使用Connection的如下方法："><a href="#注：PreparedStatement依然为接口，所以想要取得此接口的实例化对象，应该使用Connection的如下方法：" class="headerlink" title="注：PreparedStatement依然为接口，所以想要取得此接口的实例化对象，应该使用Connection的如下方法："></a>注：PreparedStatement依然为接口，所以想要取得此接口的实例化对象，应该使用Connection的如下方法：</h1><p>取得PreparedStatement接口对象：public PreparedStatement prepareStatement(String sql) throws SQLException</p>
+<p>***关于PreparedStatement接口中的setDate（）方法：<br>    在此接口中定义的setDate()方法可以设置日期内容，但是此方法使用时，后面的Date类型变量是java.sql.Date，而不是java.util.Date，而java.sql.Date是java.util.Date的子类，所以如果要想将一个java.util.Date类型的内容变为java.sql.Date类型的内容应该使用如下的语句形式：<br>        java.util.Date temp = new Date();//java.util.Date<br>        java.sql.Date bir = new java.sql.Date(temp.getTime());//java.sql.Date</p>
+<h1 id="通过PreparedStatement类执行数据库的操作"><a href="#通过PreparedStatement类执行数据库的操作" class="headerlink" title="通过PreparedStatement类执行数据库的操作"></a>通过PreparedStatement类执行数据库的操作</h1><p>1、执行增加操作：<br>    public class SqlOperate {<br>    public static final String DRIVER= “com.mysql.jdbc.Driver”;//数据库的驱动路径<br>    public static final String URL = “jdbc:mysql://localhost:3306/mh”;//连接本地数据库的地址<br>    public static final String USER = “root”;//数据库的账号<br>    public static final String PASSWORD = “123”;//数据库的密码</p>
+<pre><code>public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    Connection conn = null;//每一个Connection对象表示一个数据库连接
+    PreparedStatement st = null; //数据库操作对象
+    ResultSet rs = null ;//将查询返回ResultSet结果集
+    try {
+            Class.forName(DRIVER);
+            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            System.out.println(&quot;连接成功&quot;);
+            Scanner sc = new Scanner(System.in);
+
+            String sql = &quot;insert into game(id,gname,name,password,birthday) values(?,?,?,?,?)&quot;;
+            st = (PreparedStatement) conn.prepareStatement(sql);//找到Statement接口对象
+            //第一种设置方式</code></pre><p>//                int id = 26;<br>//                String gname = “传奇霸业”;<br>//                String name = “王世杰”;<br>//                String password = “qwee”;<br>//                Date birthday = new Date();<br>//                st.setInt(1, id);<br>//                st.setString(2, gname);<br>//                st.setString(3, name);<br>//                st.setString(4, password);<br>                //第二种直接直接设置<br>                st.setInt(1, 126);<br>                st.setString(2, “传奇霸业”);<br>                st.setString(3, “传奇霸业”);<br>                st.setString(4, “传奇霸业”);<br>                st.setString(5, “2019-12-01”);<br>//                st.setDate(5, java.sql.Date(birthday.getTime()));<br>//                st.setDate(5, new Date(System.currentTimeMillis()));//此方法较常用<br>//                st.setDate(5, new Date(new java.util.Date().getTime()));//此方法较常用<br>                int len = st.executeUpdate();<br>                System.out.println(“更新行数:”+len);<br>                String sql1 = “select * from game”;<br>                rs = st.executeQuery(sql1);//查询<br>                while(rs.next()) {<br>                    //方式一<br>                    int id = rs.getInt(1);<br>                    String gname = rs.getString(2);<br>                    String name = rs.getString(3);<br>                    String password = rs.getString(4);<br>                    Date birthday = rs.getDate(5) ;<br>                    System.out.println(id+”\t”+gname+”\t”+name+”\t”+password+”\t”+birthday);</p>
+<pre><code>}</code></pre><p>//                int len = st.executeUpdate(sql);<br>//                System.out.println(“更新行数：”+len);<br>            } catch (Exception e) {<br>                // TODO: handle exception<br>                e.printStackTrace();<br>            }<br>        try {<br>                rs.close();<br>                st.close();<br>                conn.close();<br>            } catch (SQLException e) {<br>            // TODO Auto-generated catch block<br>                e.printStackTrace();<br>            }<br>    }</p>
+<h1 id="注意：关于添加Date类型的设置方法：链接：https-blog-csdn-net-chenluyao-it-article-details-78780967"><a href="#注意：关于添加Date类型的设置方法：链接：https-blog-csdn-net-chenluyao-it-article-details-78780967" class="headerlink" title="注意：关于添加Date类型的设置方法：链接：https://blog.csdn.net/chenluyao_it/article/details/78780967"></a>注意：关于添加Date类型的设置方法：链接：<a href="https://blog.csdn.net/chenluyao_it/article/details/78780967" target="_blank" rel="noopener">https://blog.csdn.net/chenluyao_it/article/details/78780967</a></h1><p><strong>对于Date型数据不能直接用setDate(index,date)直接获取，一般可用以下两种方法解决：</strong><br> 方式一：(推荐)<br>        所有我们需要使用到java.sql.Timestamp这个类来进行转换：<br>            Timestamp t = new Timestamp(user.getBirthay().getTime());//user为实体类的对象<br>            ps.setTimestamp(3, t);</p>
+<pre><code>这样就可以直接存入数据库！</code></pre><p> 方式二：<br>        我们直接将birthday转换成特定格式的字符串String，存入数据库，这样也可以！：<br>             DateFormat df = new SimpleDateFormat(“yyyy-MM-dd HH:mm:ss”);<br>             String birthday = df.format(user.getBirthay());<br>             ps.setString(3, birthday);//这样和下面这样都可以！<br>             ps.setObject(3, birthday);</p>
+<pre><code>或者我们要想在Servlet中取得日期型数据，先将数据取出存放在String型中,然后用日期格式化操作将String型转为Date型
+        String birthday = req.getParameter(&quot;birthday&quot;);//取出对象
+        SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
+        game.setBirthday(sdf.parse(birthday));</code></pre><p>此外还有获取当前时间操作的方法：<br>pstmt.setDate(8, new Date(System.currentTimeMillis()));<br>或者：<br>pstmt.setDate(8, new Date(new java.util.Date().getTime())); </p>
+<p>另外，setDate（）只能是日期型，最小单位是日。假如需要时分秒需要：<br>pstmt.setTiemstamp(8, new Timestamp(System.currentTimeMillis()));<br>或者：<br>pstmt.setTimestamp(8, new Timestamp(new java.util.Date().getTime())); </p>
+<p>2、使用PreparedStatement进行模糊查询<br>public class SqlOperate {<br>    public static final String DRIVER= “com.mysql.jdbc.Driver”;//数据库的驱动路径<br>    public static final String URL = “jdbc:mysql://localhost:3306/mh”;//连接本地数据库的地址<br>    public static final String USER = “root”;//数据库的账号<br>    public static final String PASSWORD = “123”;//数据库的密码</p>
+<pre><code>public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    Connection conn = null;//每一个Connection对象表示一个数据库连接
+    PreparedStatement st = null; //数据库操作对象
+    ResultSet rs = null ;//将查询返回ResultSet结果集
+    try {
+            Class.forName(DRIVER);
+            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            System.out.println(&quot;连接成功&quot;);
+            String sql = &quot;select * from game where gname like &apos;传%&apos;&quot;;//模糊查询，查询出带有传字开头的游戏名
+            st = (PreparedStatement) conn.prepareStatement(sql);//取得PreparedStatement接口对象
+            rs = st.executeQuery(sql);//查询
+            while(rs.next()) {
+                //方式一
+                int id = rs.getInt(1);
+                String gname = rs.getString(2);
+                String name = rs.getString(3);
+                String password = rs.getString(4);
+                Date birthday = rs.getDate(5) ;
+                System.out.println(id+&quot;\t&quot;+gname+&quot;\t&quot;+name+&quot;\t&quot;+password+&quot;\t&quot;+birthday);
+
+            }
+
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    try {
+            rs.close();
+            st.close();
+            conn.close();
+        } catch (SQLException e) {
+        // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+}</code></pre><p>}<br>输出结果：<br>连接成功<br>25    传奇霸业    王世杰    qwee    3910-07-21<br>26    传奇霸业    赛达尔多    qwer    1996-05-10</p>
+<h1 id="关于MySQL模糊查询的详细语法介绍：https-www-cnblogs-com-panxuejun-p-6140058-html"><a href="#关于MySQL模糊查询的详细语法介绍：https-www-cnblogs-com-panxuejun-p-6140058-html" class="headerlink" title="关于MySQL模糊查询的详细语法介绍：https://www.cnblogs.com/panxuejun/p/6140058.html"></a>关于MySQL模糊查询的详细语法介绍：<a href="https://www.cnblogs.com/panxuejun/p/6140058.html" target="_blank" rel="noopener">https://www.cnblogs.com/panxuejun/p/6140058.html</a></h1><p>3、使用PreparedStatement进行分页操作：String sql = “select * from game limit 0,5”;//设置查询的范围<br>比如：<br>查询第1条到第10条的数据的sql是：select * from table limit 0,10;   -&gt;对应我们的需求就是查询第一页的数据：select * from table limit (1-1)*10,10;<br>详情分页查询：<a href="https://www.csdn.net/gather_24/MtTaEg5sOTAwOC1ibG9n.html" target="_blank" rel="noopener">https://www.csdn.net/gather_24/MtTaEg5sOTAwOC1ibG9n.html</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">多线程知识点</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">java--数据库编程操作</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/15/java--数据库编程操作/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/08/20/java--常用模型代码/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2019/08/13/其他知识链接/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">其他知识扩充链接</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -233,9 +477,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

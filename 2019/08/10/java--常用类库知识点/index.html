@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>java--常用类库知识点-Mh | 努力奋斗</title>
+  <title>java--常用类库知识点-Mh | mhaiwyl</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一、StringbBffer类#1 StringBuffer类，StringBuffer类适用于被频繁修改的字符串操作上。一般情况都会用String，极少用StringBuffer 常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承将String变为StringBuffer的两个方法：1、直接利用StringBuffer类的构造方法，p">
 <meta name="keywords" content="java--常用类库知识点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java--常用类库知识点-Mh">
 <meta property="og:url" content="http://yoursite.com/2019/08/10/java--常用类库知识点/index.html">
-<meta property="og:site_name" content="努力奋斗">
+<meta property="og:site_name" content="mhaiwyl">
 <meta property="og:description" content="一、StringbBffer类#1 StringBuffer类，StringBuffer类适用于被频繁修改的字符串操作上。一般情况都会用String，极少用StringBuffer 常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承将String变为StringBuffer的两个方法：1、直接利用StringBuffer类的构造方法，p">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-12T12:40:24.328Z">
+<meta property="og:updated_time" content="2019-08-16T09:13:05.985Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java--常用类库知识点-Mh">
 <meta name="twitter:description" content="一、StringbBffer类#1 StringBuffer类，StringBuffer类适用于被频繁修改的字符串操作上。一般情况都会用String，极少用StringBuffer 常见面试：一个类是否可以继承String类？：不能，因为String类使用了final定义，所以不能被其它类继承将String变为StringBuffer的两个方法：1、直接利用StringBuffer类的构造方法，p">
   
-    <link rel="alternative" href="/atom.xml" title="努力奋斗" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="mhaiwyl" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -48,7 +48,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/33.jpg" class="js-avatar">
+			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Mh</a></h1>
@@ -108,7 +108,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/33.jpg" class="js-avatar">
+				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Mh</h1>
@@ -228,6 +228,10 @@ public int compare(Person11 o1, Person11 o2) {
 <p>2、一组字符：任意匹配里面的一个单个字符<br>（1）、表示的可能是字母a,可能是b，或者是c： [abc]<br>（2）、表示不是字母a、字母b、字母c中的任意一个： [^abc]<br>（3）、表示全部字母中的任意一个： [a-zA-Z]<br>（4）、表示全部数字中的任意一个： [0-9]<br>3、边界匹配：在以后编写JavaScript使用正则时要使用到<br>（1）、表示一组正则的开始： ^<br>（2）、表示一组正则的结束： $<br>4、简写表达式：每一位出现的简写标记也只表示一位<br>（1）、表示任意一位字符： .<br>（2）、表示任意一位的数字，等价于[0-9]: \d<br>（3）、表示任意的一位非数字，等价于[^0-9]: \D<br>（4）、表示任意的一位字母，数字，<em>,等价于[a-zA-Z0-9_]: \w<br>（5）、表示任意的一位非字母，数字，</em>,等价于[^a-zA-Z0-9_]: \W<br>（6）、表示任意的一位空格，如\n,\t等： \s<br>（7）、表示任意的一位非空格： \S<br>5、数量表示：之前的所有正则都只是表示一位，如果想要表示多位，则就需要数量表示<br>（1）、此正则出现0此或一次： 正则表达式？<br>（2）、此正则出现0次、1次或多次： 正则表达式*<br>（3）、次正则出现1次或多次： 正则表达式+<br>（4）、次正则出现n次： 正则表达式{n}<br>（5）、次正则出现n次以上： 正则表达式{n，}<br>（6）、次正则出现n~m次： 正则表达式{n,m}<br>6、逻辑表示：与、或、非<br>（1）、表达式A后紧跟着表达式B： 正则表达式A正则表达式B<br>（2）、表达式A或者表达式B，二者任选一个： 正则表达式A|正则表达式B<br>（3）、将多个子表达式合成一个表达式，作为一组出现：（正则表达式）</p>
 <h1 id="2、String类对正则的支持"><a href="#2、String类对正则的支持" class="headerlink" title="2、String类对正则的支持"></a>2、String类对正则的支持</h1><p>操作方法：<br>（1）、与指定正则匹配(普通)：public boolean matches(String regex)<br>（2）、替换满足指定正则的全部内容：public String replaceAll(String regex,String replacement)<br>（3）、替换满足指定正则的首个内容: public String replaceFirst(String regex,String replacement)<br>（4）、按照指定正则全拆分： public String[] split(String regex)<br>（5）、按照指定正则拆分为指定个数： public String[] split(String regex,int limit)<br>代码：<br>public static void main(String[] args) {<br>        String s = “12abcd31253tasd”;<br>        String s1 = “aabbaaab”;<br>        if(s1.matches(“\d+”)) {<br>            System.out.println(“是数字”);<br>        }else {<br>            System.out.println(“不是数字”);<br>        }<br>        String r = “[ab]+”;<br>        System.out.println(s1.matches(r));<br>        System.out.println(s.replaceAll(“[a-z]”, “0”));//替换满足指定正则的全部内容<br>        System.out.println(s.replaceFirst(“\d”, “q”));//替换满足指定正则的首个内容<br>        System.out.println(s.replaceAll(“[a-z]+”, “0”));//替换满足指定正则的首个内容<br>        String  regex = “\d”;//数字出现一次[0-9]<br>        String result[] = s.split(regex);//按照指定正则全拆分<br>        for(int x = 0 ; x&lt;result.length;x++) {<br>            System.out.print(result[x]+”、”);<br>        }<br>    }<br>输出结果：<br>不是数字<br>true<br>120000312530000<br>q2abcd31253tasd<br>120312530<br>、、abcd、、、、、tasd、</p>
 <p>例1：验证一个字符串是否是整型数据，如果是将其变为int型数据，而后执行乘法操作<br>public static void main(String[] args) {<br>        String str =”100”;<br>        String regex = “\d+”;<br>        if(str.matches(regex)) {<br>            int s = Integer.parseInt(str);<br>            System.out.println(“积为：”+s<em>s);<br>        }else {<br>            System.out.println(“字符串不是纯数字组成!”);<br>        }<br>    }<br>输出结果：10000<br>例2：验证字符串是否为小数，如果是将其变为double型数据，而后执行乘法操作<br>public static void main(String[] args) {<br>        String str =”100.22”;<br>        String regex = “\d+(\.\d+)?”;//小数点（.）之后必须存在数字才有意义，所以使用了括号运算符，将“.”和小数位一起进行验证((\.\d+)?)整体出现0次或者一次<br>        if(str.matches(regex)) {<br>            double s = Double.parseDouble(str);<br>            System.out.println(“积为：”+s*s);<br>        }else {<br>            System.out.println(“字符串不是纯数字组成!”);<br>        }<br>    }<br>输出结果：积为：10044.0484<br>例3：输入一个字符串，按照“年-月-日 时：分：秒”的形式，如果正确，则将其变为Date型数据<br>public static void main(String[] args) throws ParseException {<br>        String str =”2019-08-12 15:33:50”;<br>        String regex = “\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}”;<br>        if(str.matches(regex)) {<br>            SimpleDateFormat sdf = new SimpleDateFormat(“yyyy-MM-dd HH:mm:ss”);<br>            System.out.println(sdf.parse(str));//将字符串转换为日期格式<br>        }<br>    }<br>输出结果：Mon Aug 12 15:33:50 CST 2019<br>例4：一个用户名只能由字母、数字、<em>组成，其长度只能是6~15位<br>public static void main(String[] args) throws ParseException {<br>        String str =”201905_asdf”;<br>        String regex = “\w{6,15}”;<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>输出结果：字符串合法<br>例5：编写一个正则表达式，验证电话号码是否正确（以下有关于几种电话号码的写法）<br>（1）、50021689 ——&gt; \d{7,8}表示电话号码为7位或者8位<br>（2）、01250021689 ——&gt; (\d{3,4})?\d{7,8} 前面三位可能出现也可能不出现<br>（3）、012-50021689 ——&gt; (\d{3,4})?-?\d{7,8} “-“可能出现也可能不出现<br>（4）、(012)-50021689 ——&gt; ((\d{3,4}|\(\d{3,4}\))-?)?\d{7,8}<br>（5）、(012)50021689 ——&gt;((\d{3,4}|\(\d{3,4}\))-?)?\d{7,8}<br>public static void main(String[] args) throws ParseException {<br>        String str =”012-52221698”;<br>        String regex = “((\d{3,4}|\(\d{3,4}\))-?)?\d{7,8}”;//此表达式包含以上5种<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>例6：要求验证一个Email地址，Email地址的用户名由字母、数字和_和.组成，其中不能以数字和.开头，并且Eemail地址的域名只能是.com,.cn,.net<br>public static void main(String[] args) throws ParseException {<br>        String str =”</em>.@.15.com”;<br>        String regex = “[a-zA-Z_][a-zA-Z_0-9\.]</em>@[a-zA-Z_0-9\.]+\.(com|cn|net)”;<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>输出结果：字符串合法<br>例7：要求其组成原则为“姓名：年龄：成绩：|姓名：年龄：成绩：|…”,姓名只能是字母组成，年龄只能是数字，成绩可能有小数<br>public static void main(String[] args) throws ParseException {<br>        String str =”mh:21:99|wyl:22:99.5|ly:20:89”;<br>        String regex = “([a-zA-Z]+:\d{1,3}:\d{1,3}(\.\d{1,2})?\|)+”<br>                + “([a-zA-Z]+:\d{1,3}:\d{1,3}(\.\d{1,2})?)?”;<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>输出结果：字符串合法<br>将上面按成绩由高到低排序？既然是排序就想到的方是Arrays.sort()，但是现在可以将这些数据变为对象数组排序，利用比较器完成<br>代码：<br>class Student11 implements Comparable<student11>{<br>    private String name;<br>    private int age;<br>    private double score;<br>    public Student11(String name,int age,double score) {<br>        this.name = name;<br>        this.age = age;<br>        this.score = score;<br>    }<br>    @Override<br>    public String toString() {<br>        // TODO Auto-generated method stub<br>        return “姓名：”+this.name+”,年龄：”+this.age+”,成绩：”+this.score+”\n”;<br>    }<br>    @Override<br>    public int compareTo(Student11 o) {<br>        // TODO Auto-generated method stub<br>        if(this.score&gt;o.score) {<br>            return -1;<br>        }<br>        if(this.score&lt;o.score) {<br>            return 1;<br>        }<br>        return 0;<br>    }<br>}<br>public static void main(String[] args) throws ParseException {<br>        String str =”mh:21:99|wyl:22:99.5|ly:20:89”;<br>        String regex = “([a-zA-Z]+:\d{1,3}:\d{1,3}(\.\d{1,2})?\|)+”<br>                + “([a-zA-Z]+:\d{1,3}:\d{1,3}(\.\d{1,2})?)?”;<br>        if(str.matches(regex)) {<br>            System.out.println(“字符串合法”);<br>            String result[] = str.split(“\|”);//按照正则拆分<br>            System.out.println(Arrays.toString(result));<br>            Student11 stu[] = new Student11[result.length];<br>            for(int x = 0;x&lt;result.length;x++) {<br>                String temp[] = result[x].split(“:”);<br>                stu[x] = new Student11(temp[0],<br>                Integer.parseInt(temp[1]), Double.parseDouble(temp[2]));<br>            }<br>            Arrays.sort(stu);<br>            System.out.println(Arrays.toString(stu));<br>        }else {<br>            System.out.println(“字符串不合法”);<br>        }<br>    }<br>输出结果：<br>字符串合法<br>[mh:21:99, wyl:22:99.5, ly:20:89]<br>[姓名：wyl,年龄：22,成绩：99.5<br>, 姓名：mh,年龄：21,成绩：99.0<br>, 姓名：ly,年龄：20,成绩：89.0</student11></p>
+<h2 id="十二、反射机制"><a href="#十二、反射机制" class="headerlink" title="十二、反射机制"></a>十二、反射机制</h2><h1 id="1、通过反射实例类"><a href="#1、通过反射实例类" class="headerlink" title="1、通过反射实例类"></a>1、通过反射实例类</h1><p>1、认识反射（反一般指通过对象找到类）：方式一，通过Object类的getClass（）方法取得，基本不用<br>class Persoon{<br>    public Persoon() {<br>        // TODO Auto-generated constructor stub<br>    }<br>}<br>public class Reflex {<br>    public static void main(String[] args) {<br>        Persoon p = new Persoon();//实例化对象<br>        System.out.println(p.getClass().getName());<br>    }<br>}<br>输出结果：<br>object.Persoon<br>方式二、使用类.class取得<br>class Persoon{<br>    public Persoon() {<br>        // TODO Auto-generated constructor stub<br>    }<br>}<br>public class Reflex {<br>    public static void main(String[] args) {<br>        Class&lt;?&gt; cl = Person.class;//取得Class对象<br>        System.out.println(cl.getName());//反着操作<br>    }<br>}</p>
+<p>方式三：<strong><em>使用Class类内部定义的一个static方法（被主要使用）；取得Class类对象：public static Class&lt;?&gt; forName(String className) throws ClassNotFoundException</em></strong><br>class Persoon{<br>    public Persoon() {<br>        // TODO Auto-generated constructor stub<br>    }<br>}<br>public class Reflex {<br>    public static void main(String[] args) {<br>        Class&lt;?&gt; cl = Class.forName(“object.Person”);//取得Class对象<br>        System.out.println(cl.getName());//反着操作<br>    }<br>}</p>
+<h1 id="2、通过反射实例化对象："><a href="#2、通过反射实例化对象：" class="headerlink" title="2、通过反射实例化对象："></a>2、通过反射实例化对象：</h1><p>public T newInstance() throws InstantiationException,IllegalAccessException</p>
+<h1 id="通过反射机制实现工厂设计模式"><a href="#通过反射机制实现工厂设计模式" class="headerlink" title="通过反射机制实现工厂设计模式"></a>通过反射机制实现工厂设计模式</h1><p>之前工厂模式接口的子类有新加的，那么工厂类就要跟着修改，造成这个很大的问题在于new，现在用反射机制来修改：<br>interface Fruit{<br>    public void eat();//定义一个吃的方法<br>}<br>class Apple implements Fruit{<br>    @Override<br>    public void eat() {<br>        System.out.println(“吃苹果”);<br>    }<br>}<br>class Orange implements Fruit{<br>    @Override<br>    public void eat() {<br>        System.out.println(“吃橘子”);<br>    }<br>}<br>class Factory{<br>    public static Fruit getInstance(String className) {<br>        Fruit f = null;<br>        try {<br>            f = (Fruit) Class.forName(className).newInstance();//反射实例化<br>        } catch (Exception e) {<br>            // TODO Auto-generated catch block<br>            e.printStackTrace();<br>        }<br>        return f;<br>    }<br>}<br>public class Reflex {<br>    public static void main(String[] args) throws ClassNotFoundException {<br>        Fruit f = Factory.getInstance(“object.Apple”);//取得苹果类<br>        Fruit f1 = Factory.getInstance(“object.Orange”);//取得橘子类<br>        f.eat();<br>        f1.eat();<br>    }<br>}<br>输出结果：<br>吃苹果<br>吃橘子</p>
 
       
 
@@ -469,7 +473,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">java--IO操作</a>
+                <a href="javascript:void(0)" class="js-tag color4">其他知识扩充链接</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -477,11 +481,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Mybatis的配置</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">多线程知识点</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">java--数据库编程操作</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">java--常用类库知识点</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">java--IO操作</a>
               </li>
             
             <div class="clearfix"></div>

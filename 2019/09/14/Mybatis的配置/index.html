@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 多线程知识点 | mhaiwyl</title>
+  <title>Mybatis的配置-Mh | mhaiwyl</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="不甘现状，努力奋斗！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mhaiwyl">
-<meta property="og:url" content="http://yoursite.com/tags/多线程知识点/index.html">
+  <meta name="description" content="mybatis的配置创建好一个maven项目1、在pom.xml文件中配置所需要的版本号，jar包等。例：    4.0.0 &amp;lt;groupId&amp;gt;com.itheima&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;day01&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;pac">
+<meta name="keywords" content="Mybatis的配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mybatis的配置-Mh">
+<meta property="og:url" content="http://yoursite.com/2019/09/14/Mybatis的配置/index.html">
 <meta property="og:site_name" content="mhaiwyl">
-<meta property="og:description" content="不甘现状，努力奋斗！">
+<meta property="og:description" content="mybatis的配置创建好一个maven项目1、在pom.xml文件中配置所需要的版本号，jar包等。例：    4.0.0 &amp;lt;groupId&amp;gt;com.itheima&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;day01&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;pac">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-09-23T08:04:44.280Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mhaiwyl">
-<meta name="twitter:description" content="不甘现状，努力奋斗！">
+<meta name="twitter:title" content="Mybatis的配置-Mh">
+<meta name="twitter:description" content="mybatis的配置创建好一个maven项目1、在pom.xml文件中配置所需要的版本号，jar包等。例：    4.0.0 &amp;lt;groupId&amp;gt;com.itheima&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;day01&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;pac">
   
     <link rel="alternative" href="/atom.xml" title="mhaiwyl" type="application/atom+xml">
   
@@ -157,60 +159,417 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Mybatis的配置" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/09/java--多线程知识点/" class="archive-article-date">
-  	<time datetime="2019-08-09T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/09/java--多线程知识点/">我的第一篇博客文章-Mh</a>
+    <h1 class="article-title" itemprop="name">
+      Mybatis的配置-Mh
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/09/14/Mybatis的配置/" class="archive-article-date">
+  	<time datetime="2019-09-14T05:18:04.344Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="mybatis的配置"><a href="#mybatis的配置" class="headerlink" title="mybatis的配置"></a>mybatis的配置</h2><p>创建好一个maven项目<br>1、在pom.xml文件中配置所需要的版本号，jar包等。<br>例：<br><?xml version="1.0" encoding="UTF-8"?><br><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"><br>    <modelversion>4.0.0</modelversion></project></p>
+<pre><code>&lt;groupId&gt;com.itheima&lt;/groupId&gt;
+&lt;artifactId&gt;day01&lt;/artifactId&gt;
+&lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+&lt;packaging&gt;jar&lt;/packaging&gt;
+&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.mybatis&lt;/groupId&gt;
+        &lt;artifactId&gt;mybatis&lt;/artifactId&gt;
+        &lt;version&gt;3.4.5&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;!-- 数据库--&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;mysql&lt;/groupId&gt;
+        &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+        &lt;version&gt;5.1.32&lt;/version&gt;
+    &lt;/dependency&gt;
+
+    &lt;!-- 日志--&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;log4j&lt;/groupId&gt;
+        &lt;artifactId&gt;log4j&lt;/artifactId&gt;
+        &lt;version&gt;1.2.12&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;!-- Junit测试--&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;junit&lt;/groupId&gt;
+        &lt;artifactId&gt;junit&lt;/artifactId&gt;
+        &lt;version&gt;4.12&lt;/version&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;</code></pre>
+2、在resources文件下创建两个xxx.xml文件：
+（1）、xxx.xml开头文件是mybatis的config约束文件，里面主要配置数据库连接，指定映射配置文件的位置等；mybatis的主配置文件
+例：
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--mybatis的主配置文件-->
+<configuration>
+    <!-- 配置环境-->
+    <environments default="mysql">
+        <!-- 配置MySQL的环境-->
+        <environment id="mysql">
+            <!-- 配置事务的类型-->
+            <transactionmanager type="JDBC"></transactionmanager>
+            <!-- 配置数据源（连接池）-->
+            <datasource type="POOLED">
+                <!--配置；连接数据库的四个基本信息-->
+                <property name="driver" value="com.mysql.jdbc.Driver">
+                <property name="url" value="jdbc:mysql://localhost:3306/mh">
+                <property name="username" value="root">
+                <property name="password" value="123">
+
+<pre><code>        &lt;/dataSource&gt;
+    &lt;/environment&gt;
+&lt;/environments&gt;
+
+&lt;!--指定映射配置文件的位置,映射配置文件指的是每个dao独立的配置文件--&gt;
+&lt;mappers&gt;
+    &lt;mapper resource=&quot;com/itheima/dao/IGameDao.xml&quot;&gt;&lt;/mapper&gt;
+&lt;/mappers&gt;</code></pre></property></property></property></property></datasource></environment></environments></configuration>
+（2）、配置与接口名称相同的xml文件，映射sql语句；里面的开头文件是为mapper的约束文件；映射配置文件
+例：
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.IGameDao">
+    <!-- SQL语句 -->
+
+<pre><code>&lt;!--配置查询所有--&gt;
+&lt;select id=&quot;findAll&quot;&gt;
+    select * from game;
+&lt;/select&gt;</code></pre></mapper>
+
+<h2 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h2><p>1、上面创建的IGameDao.xml和IGameDao.java也可以叫做Mapper<br>2、创建目录时，他和包结构不一样，包在创建时是三级结构，目录为一级目录。创建时需要一个一个按层创建<br>3、mybatis的映射配置文件位置必须和dao接口的包结构相同<br>4、映射配置文件的Mapper标签namespace属性的取值必须是dao接口的全限定类名<br>5、映射配置文件的操作配置（select），id属性的取值必须是dao接口的方法名。<br>上面几点如都配置正确的话，就无需编写dao层的实现类 </p>
+<h2 id="测试类配置：大致为6步"><a href="#测试类配置：大致为6步" class="headerlink" title="测试类配置：大致为6步"></a>测试类配置：大致为6步</h2><p> //1、读取配置文件<br>        InputStream in = Resources.getResourceAsStream(“SqlMapConfig.xml”);<br>        //2、创建SqlSessionFactory工厂<br>        SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();<br>        SqlSessionFactory factory = builder.build(in);<br>        //3、使用工厂生产SqlSession对象<br>        SqlSession session = factory.openSession();<br>        //4、使用SeqSession创建Dao接口的代理对象<br>        IGameDao iGameDao = session.getMapper(IGameDao.class);<br>        //5、使用代理对象执行方法<br>        /*<br>        新增一条数据<br>         */<br>        Game g = new Game();<br>        g.setGname(“手游吃鸡”);<br>        g.setName(“mh”);<br>        g.setPassword(“123”);<br>        String t = “2019-09-22”;<br>        SimpleDateFormat sdf = new SimpleDateFormat(“yyyy-MM-dd”);<br>        g.setBirthday(sdf.parse(t));<br>        iGameDao.saveGame(g);<br>        //提交事务<br>        session.commit();</p>
+<pre><code> /*
+ 修改用户
+  */
+ Game g1 = iGameDao.findById(5);
+ g1.setGname(&quot;shaha&quot;);
+iGameDao.update(g1);
+ session.commit();
+
+ /*
+ 根据ID删除数据
+  */
+iGameDao.delete(1231232);
+ session.commit();
+
+ /*
+ 查询全部结果
+  */
+ List&lt;Game&gt; games = iGameDao.findAll();
+ for (Game game:games) {
+     System.out.println(game);
+ }
+ //6、释放资源
+ session.close();</code></pre><p>注意：在映射配置文件中用resultType属性告知mybatis要封装到那个实体类。</p>
+<h2 id="mybatis与spring的常见三种总结方式：1、用实现mapper的实现类来整合；"><a href="#mybatis与spring的常见三种总结方式：1、用实现mapper的实现类来整合；" class="headerlink" title="mybatis与spring的常见三种总结方式：1、用实现mapper的实现类来整合；"></a>mybatis与spring的常见三种总结方式：1、用实现mapper的实现类来整合；</h2><p><strong>mybatis与spring整合不变的是：1、创建DataSource;2、创建SqlSessionFactory对象</strong><br>创建DataSource:<br> <!-- 1. 数据源 : DriverManagerDataSource --><br>    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"><br>        <property name="driverClassName" value="com.mysql.jdbc.Driver"><br>        <property name="url" value="jdbc:mysql://localhost:3306/mh"><br>        <property name="username" value="root"><br>        <property name="password" value="123"><br>        <property name="maxActive" value="10"><br>        <property name="maxIdle" value="5"><br>    </property></property></property></property></property></property></bean><br>创建SqlsessionFactory</p>
+<!--创建SqlSessionFactory对象
+        2. mybatis的SqlSession的工厂: SqlSessionFactoryBean dataSource:引用数据源
+        MyBatis定义数据源,同意加载配置
+    -->
+<pre><code>&lt;bean id=&quot;sqlSessionFactory&quot; class=&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;&gt;
+    &lt;!--关联连接池--&gt;
+    &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;&gt;&lt;/property&gt;
+    &lt;!--加载sql映射文件--&gt;
+    &lt;property name=&quot;mapperLocations&quot; value=&quot;classpath:com/itheima/dao/*.xml&quot;/&gt;
+    &lt;!--
+    &lt;property name=&quot;mapperLocations&quot; value=&quot;classpath:com/itheima/dao/*.xml&quot;/&gt;
+   --&gt;
+
+&lt;/bean&gt;</code></pre><p>1、使用实现类来实现整合：</p>
+<p>2、不用实现类，配置mapper接口：<br><?xml version="1.0" encoding="UTF-8"?><br><beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx" xsi:schemalocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd"></beans></p>
+<pre><code>&lt;!-- 自动扫描 --&gt;
+&lt;context:component-scan base-package=&quot;com.itheima.dao&quot; /&gt;
+&lt;!-- 引入配置文件 --&gt;
+&lt;bean id=&quot;propertyConfigurer&quot;
+      class=&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;&gt;
+    &lt;!--&lt;property name=&quot;location&quot; value=&quot;classpath:jdbc.properties&quot; /&gt; --&gt;
+&lt;/bean&gt;
+
+&lt;!-- Mybatis和Spring的整合 --&gt;
+&lt;!-- 1. 数据源 : DriverManagerDataSource --&gt;
+&lt;bean id=&quot;dataSource&quot;
+      class=&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;&gt;
+    &lt;property name=&quot;driverClassName&quot; value=&quot;com.mysql.jdbc.Driver&quot; /&gt;
+    &lt;property name=&quot;url&quot; value=&quot;jdbc:mysql://localhost:3306/mh&quot; /&gt;
+    &lt;property name=&quot;username&quot; value=&quot;root&quot; /&gt;
+    &lt;property name=&quot;password&quot; value=&quot;123&quot; /&gt;
+&lt;/bean&gt;
+
+&lt;!--创建SqlSessionFactory对象
+    2. mybatis的SqlSession的工厂: SqlSessionFactoryBean dataSource:引用数据源
+    MyBatis定义数据源,同意加载配置
+--&gt;
+&lt;bean id=&quot;sqlSessionFactory&quot; class=&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;&gt;
+    &lt;!--关联连接池--&gt;
+    &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;&gt;&lt;/property&gt;
+    &lt;!--加载sql映射文件--&gt;
+    &lt;property name=&quot;mapperLocations&quot; value=&quot;classpath:com/itheima/dao/*.xml&quot;/&gt;
+    &lt;!--
+    &lt;property name=&quot;mapperLocations&quot; value=&quot;classpath:com/itheima/dao/*.xml&quot;/&gt;
+   --&gt;
+
+&lt;/bean&gt;
+
+&lt;!--配置mapper接口 spring与mybatis整合的第二种--&gt;
+&lt;bean id=&quot;iGameDao&quot; class=&quot;org.mybatis.spring.mapper.MapperFactoryBean&quot;&gt;
+    &lt;!--关联Mapper接口--&gt;
+    &lt;property name=&quot;mapperInterface&quot; value=&quot;com.itheima.dao.IGameDao&quot;/&gt;
+    &lt;!--关联SqlSessionFactory--&gt;
+    &lt;property name=&quot;sqlSessionFactory&quot; ref=&quot;sqlSessionFactory&quot;/&gt;
+&lt;/bean&gt;
+
+测试：
+package com.itheima.test;
+
+import com.itheima.dao.IGameDao;
+import com.itheima.domain.Game;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;</code></pre><p>public class MabtisSpring {</p>
+<pre><code>@Test
+public void test() throws ParseException {
+    //1、加载spring配置
+    ApplicationContext ac = new ClassPathXmlApplicationContext(&quot;spring-mybatis.xml&quot;);
+
+    //2、获取对象
+    IGameDao iGameDao = (IGameDao) ac.getBean(&quot;iGameDao&quot;);
+
+    //3、调用方法
+    /*
+    加入一条数据
+     */
+    Game game = new Game();
+    game.setId(6);
+    game.setGname(&quot;天黑请闭眼&quot;);
+    game.setName(&quot;mh&quot;);
+    game.setPassword(&quot;123456&quot;);
+    String date = &quot;2019-09-23&quot;;
+    SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
+    game.setBirthday(sdf.parse(date));
+    iGameDao.saveGame(game);
+}</code></pre><p>}</p>
+<p>3、使用接口的扫描：<br>    以上代码没变，只改后面部分<br>  &lt;!–mapper接口的扫描，spring与mybatis整合的第三种推荐<br>        3. mybatis自动扫描加载Sql映射文件/接口 : MapperScannerConfigurer sqlSessionFactory</p>
+<pre><code>    basePackage:指定sql映射文件/接口所在的包（自动扫描）
+
+    注意：如果使用Dao（mapper）接口包扫描，那么每个Dao（Mapper）接口在Spring容器中的ID名称为类名：例如：IGameDao
+--&gt;
+
+&lt;bean class=&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;&gt;
+    &lt;!--配置Dao（Mapper）接口所在包路径--&gt;
+    &lt;property name=&quot;basePackage&quot; value=&quot;com.itheima.dao&quot;&gt;&lt;/property&gt;
+    &lt;property name=&quot;sqlSessionFactory&quot; ref=&quot;sqlSessionFactory&quot;&gt;&lt;/property&gt;
+&lt;/bean&gt;</code></pre><p>测试：<br>    只修改要变动部分：<br>    @Test<br>    public void test() throws ParseException {<br>        //1、加载spring配置<br>        ApplicationContext ac = new ClassPathXmlApplicationContext(“spring-mybatis.xml”);<br>        //2、获取对象<br>        IGameDao iGameDao = (IGameDao) ac.getBean(“IGameDao”);<br>        //3、调用方法<br>        Game game = new Game();<br>        game.setId(7);<br>        game.setGname(“天黑请闭眼”);<br>        game.setName(“mh”);<br>        game.setPassword(“123456”);<br>        String date = “2019-09-23”;<br>        SimpleDateFormat sdf = new SimpleDateFormat(“yyyy-MM-dd”);<br>        game.setBirthday(sdf.parse(date));<br>        iGameDao.saveGame(game);<br>    }</p>
+<h1 id="注：在整合spring-mybatis时，由于spring-mybatisjar包与mybatisjar包版本起冲突，有时需要设置起对应的版本号"><a href="#注：在整合spring-mybatis时，由于spring-mybatisjar包与mybatisjar包版本起冲突，有时需要设置起对应的版本号" class="headerlink" title="注：在整合spring-mybatis时，由于spring-mybatisjar包与mybatisjar包版本起冲突，有时需要设置起对应的版本号"></a>注：在整合spring-mybatis时，由于spring-mybatisjar包与mybatisjar包版本起冲突，有时需要设置起对应的版本号</h1><p>报错如下：<br>org.mybatis.spring.transaction.SpringManagedTransaction.getTimeout()Ljava/lang/Integer;</p>
+<h2 id="spring与mybatis的事务整理："><a href="#spring与mybatis的事务整理：" class="headerlink" title="spring与mybatis的事务整理："></a>spring与mybatis的事务整理：</h2><p>创建一个业务层service，service中在创建一个实现serviceimpl:</p>
+<h2 id="1、GameSeervice"><a href="#1、GameSeervice" class="headerlink" title="1、GameSeervice:"></a>1、GameSeervice:</h2><p>package com.itheima.service;<br>import com.itheima.domain.Game;<br>public interface GameService {<br>    public void saveGame(Game game);<br>}</p>
+<h2 id="2、GameSeerviceImpl"><a href="#2、GameSeerviceImpl" class="headerlink" title="2、GameSeerviceImpl:"></a>2、GameSeerviceImpl:</h2><p>package com.itheima.service.impl;</p>
+<p>import com.itheima.dao.IGameDao;<br>import com.itheima.domain.Game;<br>import com.itheima.service.GameService;<br>import org.springframework.stereotype.Service;<br>import javax.annotation.Resource;<br>//@Service 为IOC注解</p>
+<p>@Service(“abc”)<br>public class GameServiceImpl implements GameService {<br>    //注入mapper对象<br>    @Resource<br>    private IGameDao iGameDao;<br>    public void saveGame(Game game) {<br>        iGameDao.saveGame(game);<br>        //模拟异常，模拟有无事务的情况，如无则会在数据库中插入一条数据，如开启事务管理，此处报异常则不会插入数据<br>        int s = 100/0;<br>        iGameDao.saveGame(game);<br>    }<br>}</p>
+<h2 id="3、当前项目被Spring管理，此时则可以使用Spring注解，但需要去spring-mybatis中开启Spring的注解："><a href="#3、当前项目被Spring管理，此时则可以使用Spring注解，但需要去spring-mybatis中开启Spring的注解：" class="headerlink" title="3、当前项目被Spring管理，此时则可以使用Spring注解，但需要去spring-mybatis中开启Spring的注解："></a>3、当前项目被Spring管理，此时则可以使用Spring注解，但需要去spring-mybatis中开启Spring的注解：</h2> <!-- 开起Spring的IOC注解的自动扫描 -->
+<pre><code>&lt;context:component-scan base-package=&quot;com.itheima&quot; /&gt;</code></pre><h2 id="4、-测试："><a href="#4、-测试：" class="headerlink" title="4、 测试："></a>4、 测试：</h2><p>package com.itheima.test;</p>
+<p>import com.itheima.dao.IGameDao;<br>import com.itheima.domain.Game;<br>import com.itheima.service.GameService;<br>import org.junit.Test;<br>import org.springframework.context.ApplicationContext;<br>import org.springframework.context.support.ClassPathXmlApplicationContext;</p>
+<p>import java.text.ParseException;<br>import java.text.SimpleDateFormat;</p>
+<p>public class MabtisSpring {</p>
+<pre><code>@Test
+public void test() throws ParseException {
+    //1、加载spring配置
+    ApplicationContext ac = new ClassPathXmlApplicationContext(&quot;spring-mybatis.xml&quot;);
+    GameService gs = (GameService) ac.getBean(&quot;abc&quot;);//获取@Service的名称</code></pre><p>//        //2、获取对象<br>//        IGameDao iGameDao = (IGameDao) ac.getBean(“IGameDao”);</p>
+<pre><code>//3、调用方法
+Game game = new Game();
+game.setGname(&quot;天黑请闭眼&quot;);
+game.setName(&quot;mhss&quot;);
+game.setPassword(&quot;123456&quot;);
+String date = &quot;2019-09-23&quot;;
+SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
+game.setBirthday(sdf.parse(date));
+gs.saveGame(game);</code></pre><p>//        iGameDao.saveGame(game);<br>    }</p>
+<p>}</p>
+<h2 id="5、开启事务"><a href="#5、开启事务" class="headerlink" title="5、开启事务"></a>5、开启事务</h2><p>在spring-mybatis.xml文件里添加：</p>
+<!--开启Spring的事务
+
+        事务管理器
+    -->
+<pre><code>&lt;bean id=&quot;transactionManage&quot; class=&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;&gt;
+    &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;/&gt;
+&lt;/bean&gt;
+&lt;!--启用spring事务注解功能--&gt;
+&lt;tx:annotation-driven transaction-manager=&quot;transactionManage&quot;/&gt;</code></pre><h2 id="测试：在GameServiceImpl中添加事务管理的注解-Transactional"><a href="#测试：在GameServiceImpl中添加事务管理的注解-Transactional" class="headerlink" title="测试：在GameServiceImpl中添加事务管理的注解@Transactional"></a>测试：在GameServiceImpl中添加事务管理的注解@Transactional</h2><p>package com.itheima.service.impl;<br>import com.itheima.dao.IGameDao;<br>import com.itheima.domain.Game;<br>import com.itheima.service.GameService;<br>import org.springframework.stereotype.Service;<br>import javax.annotation.Resource;<br>import javax.transaction.Transactional;<br>//@Service 为IOC注解<br>@Service(“abc”)</p>
+<p>//事务管理的注解@Transactional<br>@Transactional<br>public class GameServiceImpl implements GameService {<br>    //注入mapper对象<br>    @Resource<br>    private IGameDao iGameDao;</p>
+<pre><code>public void saveGame(Game game) {
+    iGameDao.saveGame(game);
+    //模拟异常，模拟有无事务的情况，如无则会在数据库中插入一条数据，如开启事务管理，此处报异常则不会插入数据
+    int s = 100/0;
+    iGameDao.saveGame(game);
+}</code></pre><p>}</p>
+<h2 id="MyBatis里ResultMap丶ResultType的区别与ParameterType详解"><a href="#MyBatis里ResultMap丶ResultType的区别与ParameterType详解" class="headerlink" title="MyBatis里ResultMap丶ResultType的区别与ParameterType详解"></a>MyBatis里ResultMap丶ResultType的区别与ParameterType详解</h2><p><a href="https://blog.csdn.net/Jiale1998/article/details/90047693" target="_blank" rel="noopener">https://blog.csdn.net/Jiale1998/article/details/90047693</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">多线程知识点</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Mybatis的配置</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/14/Mybatis的配置/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/08/27/java--面试题总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -233,9 +592,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
